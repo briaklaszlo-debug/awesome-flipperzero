@@ -35,7 +35,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   ]
 }
 </script>
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="float-btns">
@@ -63,8 +63,8 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
       <h1>Ariston Velis Evo<br><span>Okos WiFi Bojler – Teljes Bemutató</span></h1>
       <p class="hero-sub">Az Ariston Velis Evo az okosotthon bojler – beépített WiFi modul, Ariston Net app vezérlés, A energiaosztály. Távolról is szabályozható, időzíthető, okos üzemmódok. 30–100L változatokban.</p>
       <div class="hero-ctas">
-        <a href="<?= $phone_link ?>" class="btn-red">📞 Ariston Velis Szerviz</a>
-        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-blue">🔄 Ariston Velis Csere</a>
+        <a href="<?= $phone_link ?>" class="btn-primary">📞 Ariston Velis Szerviz</a>
+        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-secondary">🔄 Ariston Velis Csere</a>
       </div>
     </div>
     <div class="spec-card">
@@ -81,16 +81,16 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
         <div class="price">~90.000–105.000 Ft</div>
         <p>Készülék + beépítés + app beállítás</p>
         <a href="<?= $phone_link ?>">📞 Árajánlat Kérése</a>
-        <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" style="background:#1565c0">🔵 Ariston Szerviz</a>
+        <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" style="background:#c62828">🔵 Ariston Szerviz</a>
       </div>
     </div>
   </div>
 </section>
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Ariston Velis Evo bojler:</strong> Az Ariston Velis Evo WiFi-s okos villanybojler – A energiaosztály, beépített WiFi, Ariston Net app vezérlés. 80L-es modell ára beépítéssel Budapest: 90.000–105.000 Ft. A bojler okostelefonról vezérelhető, időzíthető, és automatikus anti-legionella programmal rendelkezik. Szerviz, javítás: Provi Domus Kft. – Tel: +36 70 164-4000.</p>
 </div>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Ariston Velis <span>Különleges Funkciók</span></h2>
     <div class="features-grid">
@@ -158,7 +158,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     </div>
   </div>
 </section>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Ariston Velis vs. <span>Lydos – Összehasonlítás</span></h2>
     <div class="pros-cons">
@@ -195,7 +195,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     </table>
   </div>
 </section>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Ariston Velis <span>GYIK</span></h2>
     <div class="faq-list">
@@ -218,11 +218,11 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   <div class="section-inner">
     <h2 class="section-title">Kapcsolódó <span>Oldalak</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span>🔵</span><span>Ariston Szerviz Budapest</span></a>
-      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span>📘</span><span>Ariston Lydos</span></a>
-      <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/" class="related-link"><span>📙</span><span>Ariston Pro1 Eco</span></a>
-      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span>📱</span><span>Hajdú Z Smart (WiFi)</span></a>
-      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span>🔄</span><span>Bojler Csere Budapest</span></a>
+      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔵</span><span>Ariston Szerviz Budapest</span></a>
+      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span class="r-icon">📘</span><span>Ariston Lydos</span></a>
+      <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/" class="related-link"><span class="r-icon">📙</span><span>Ariston Pro1 Eco</span></a>
+      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span class="r-icon">📱</span><span>Hajdú Z Smart (WiFi)</span></a>
+      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span class="r-icon">🔄</span><span>Bojler Csere Budapest</span></a>
     </div>
   </div>
 </section>
@@ -251,7 +251,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   </div>
   <div class="footer-bottom">
     <span>© 2025 Provi Domus Kft. – Ariston Velis Szerviz Budapest.</span>
-    <span>📞 <a href="<?= $phone_link ?>" style="color:#42a5f5"><?= $phone ?></a></span>
+    <span>📞 <a href="<?= $phone_link ?>" style="color:#ff6b00"><?= $phone ?></a></span>
   </div>
 </footer>
 <script>document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>q.parentElement.classList.toggle('open'))});</script>

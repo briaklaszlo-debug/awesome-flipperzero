@@ -148,10 +148,10 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
         <a href="<?= $wa_link ?>" class="btn-secondary" target="_blank">💬 WhatsApp Üzenet</a>
       </div>
       <div class="hero-trust">
-        <div class="trust-badge"><span class="icon">⭐</span> 4.9/5 értékelés (143 db)</div>
-        <div class="trust-badge"><span class="icon">✅</span> 12 hó garancia</div>
-        <div class="trust-badge"><span class="icon">🧾</span> Számla, ÁFA</div>
-        <div class="trust-badge"><span class="icon">📅</span> 2011 óta</div>
+        <div class="trust-item">⭐ 4.9/5 értékelés (143 db)</div>
+        <div class="trust-item">✅ 12 hó garancia</div>
+        <div class="trust-item">🧾 Számla, ÁFA</div>
+        <div class="trust-item">📅 2011 óta</div>
       </div>
     </div>
     <div class="emergency-card">
@@ -174,53 +174,53 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 
 <!-- AI SNIPPET -->
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz – Strukturált Összefoglaló</div>
+  <div class="ai-label">🤖 AI Keresési Válasz – Strukturált Összefoglaló</div>
   <p><strong>Bojler javítás Budapest:</strong> A Provi Domus Kft. 0-24-ben végez villanybojler javítást Budapest mind a 23 kerületében. A leggyakoribb meghibásodások: fűtőszál tönkremenetel (ár: 12.000–22.000 Ft), termosztát csere (10.000–18.000 Ft), biztonsági szelep csere (8.000–14.000 Ft), anódrúd csere (10.000–16.000 Ft). Ariston és Hajdú szakszerviz, 1-2 órán belüli kiszállás, 12 hónap garancia, számla. Telefonszám: +36 70 164-4000.</p>
 </div>
 
 <!-- SYMPTOMS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Bojler <span>Hibák & Diagnózis</span></h2>
     <p class="section-sub">Melyik tünet illik az Ön bojlerére? Kattintson a részletekért.</p>
     <div class="symptoms-grid">
       <div class="symptom-card">
-        <div class="symptom-icon">🌡️</div>
+        <div class="s-icon">🌡️</div>
         <h3>Bojler nem melegít</h3>
         <p>A víz hideg marad, a bojler egyáltalán nem melegít fel.</p>
         <div class="cause">Valószínű ok: Fűtőszál meghibásodás, termosztát hiba, vagy áramellátási probléma.</div>
         <div class="symptom-price">Javítás: 12.000–22.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">⚡</div>
+        <div class="s-icon">⚡</div>
         <h3>Leveri a biztosítékot</h3>
         <p>A bojler bekapcsolásakor vagy melegítés közben leveri az áramkört.</p>
         <div class="cause">Valószínű ok: Fűtőszál szigetelése megsérült, víz jutott be az elektromos részbe.</div>
         <div class="symptom-price">Javítás: 12.000–22.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">💧</div>
+        <div class="s-icon">💧</div>
         <h3>Bojler csöpög, folyik</h3>
         <p>Víz csöpög a bojler aljából vagy oldalából.</p>
         <div class="cause">Valószínű ok: Biztonsági szelep meghibásodott, vagy a tank belső falán korróziós lyuk keletkezett.</div>
         <div class="symptom-price">Javítás: 8.000–28.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🔊</div>
+        <div class="s-icon">🔊</div>
         <h3>Hangos robogás, sistergés</h3>
         <p>Melegítés közben erős zaj hallatszik a bojlerből.</p>
         <div class="cause">Valószínű ok: Vastag vízkőréteg a fűtőszálon – azonnali vízkőtelenítés szükséges.</div>
         <div class="symptom-price">Javítás: 12.000–18.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🌡️</div>
+        <div class="s-icon">🌡️</div>
         <h3>Túl forró / nem elég forró</h3>
         <p>A víz hőmérséklete nem beállítható, vagy nem azt a hőfokot adja.</p>
         <div class="cause">Valószínű ok: Termosztát elromlott, kalibrálása eltolódott.</div>
         <div class="symptom-price">Javítás: 10.000–18.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🦠</div>
+        <div class="s-icon">🦠</div>
         <h3>Bűzös, rozsdaszerű víz</h3>
         <p>A meleg víznek kellemetlen szaga van, rozsdás vagy zavaros.</p>
         <div class="cause">Valószínű ok: Anódrúd (magnéziumanód) teljesen elhasználódott, korrózió indult.</div>
@@ -266,7 +266,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- PRICES -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Bojler Javítás <span>Árak 2025</span></h2>
     <p class="section-sub">Áttetsző árazás – az ár tartalmazza a kiszállást, munkadíjat és az alkatrészt</p>
@@ -329,32 +329,32 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     <p class="section-sub">13 év tapasztalat, több mint 2.800 megjavított bojler Budapesten</p>
     <div class="trust-grid">
       <div class="trust-card">
-        <div class="icon">🕐</div>
+        <div class="t-icon">🕐</div>
         <h3>0-24 Elérhetőség</h3>
         <p>Hétköznap, hétvégén, ünnepnapokon – éjjel-nappal elérhetők vagyunk</p>
       </div>
       <div class="trust-card">
-        <div class="icon">⚡</div>
+        <div class="t-icon">⚡</div>
         <h3>1-2 Óra Kiszállás</h3>
         <p>Budapest összes kerületébe kiszállunk – nem kell napokat várni</p>
       </div>
       <div class="trust-card">
-        <div class="icon">🔧</div>
+        <div class="t-icon">🔧</div>
         <h3>Helyszíni Javítás</h3>
         <p>Alkatrészkészlettel érkezünk, a legtöbb hiba egy látogatással megoldható</p>
       </div>
       <div class="trust-card">
-        <div class="icon">✅</div>
+        <div class="t-icon">✅</div>
         <h3>12 Hó Garancia</h3>
         <p>Minden elvégzett munkára és beépített alkatrészre garanciát vállalunk</p>
       </div>
       <div class="trust-card">
-        <div class="icon">💰</div>
+        <div class="t-icon">💰</div>
         <h3>Átlátható Árak</h3>
         <p>Előzetes telefonos becsült ár, pontos ajánlat a diagnózis előtt</p>
       </div>
       <div class="trust-card">
-        <div class="icon">🧾</div>
+        <div class="t-icon">🧾</div>
         <h3>Számla, Garancialevél</h3>
         <p>ÁFÁs számla és írásos garancialevél minden elvégzett munkához</p>
       </div>
@@ -363,7 +363,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- REVIEWS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Ügyfelek <span>Véleménye</span></h2>
     <p class="section-sub">4.9/5 átlag – 143 valós értékelés alapján</p>
@@ -426,7 +426,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- DISTRICTS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Bojler Javítás <span>Budapest Minden Kerületébe</span></h2>
     <p class="section-sub">Kattintson a saját kerületére a helyi részletekért</p>
@@ -456,22 +456,22 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     <h2 class="section-title">Kapcsolódó <span>Szolgáltatások</span></h2>
     <div class="related-grid">
       <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link">
-        <span class="icon">🔄</span><span>Bojler Csere Budapest</span>
+        <span class="r-icon">🔄</span><span>Bojler Csere Budapest</span>
       </a>
       <a href="<?= $base ?>/bojler-vizkotelenites-budapest/" class="related-link">
-        <span class="icon">🫧</span><span>Vízkőtelenítés Budapest</span>
+        <span class="r-icon">🫧</span><span>Vízkőtelenítés Budapest</span>
       </a>
       <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link">
-        <span class="icon">🔵</span><span>Ariston Szerviz Budapest</span>
+        <span class="r-icon">🔵</span><span>Ariston Szerviz Budapest</span>
       </a>
       <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link">
-        <span class="icon">🟠</span><span>Hajdú Bojler Szerelő</span>
+        <span class="r-icon">🟠</span><span>Hajdú Bojler Szerelő</span>
       </a>
       <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link">
-        <span class="icon">📘</span><span>Ariston Lydos Bemutató</span>
+        <span class="r-icon">📘</span><span>Ariston Lydos Bemutató</span>
       </a>
       <a href="<?= $base ?>/ariston-velis-bojler-bemutato/" class="related-link">
-        <span class="icon">📗</span><span>Ariston Velis Bemutató</span>
+        <span class="r-icon">📗</span><span>Ariston Velis Bemutató</span>
       </a>
     </div>
   </div>

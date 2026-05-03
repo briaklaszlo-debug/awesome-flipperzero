@@ -15,7 +15,7 @@ $base='https://www.bojler-szerelo-budapest.hu';
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Product","name":"Hajdú Ideállo 100 Villanybojler","brand":{"@type":"Brand","name":"Hajdú"},"description":"A Hajdú Ideállo nagy kapacitású villanybojler 4+ személyes háztartásokba – 50-150L, debreceni gyártás, kiváló ár-érték."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Főoldal","item":"<?= $base ?>/"},{"@type":"ListItem","position":2,"name":"Hajdú Szerviz","item":"<?= $base ?>/hajdu-bojler-csere-budapest/"},{"@type":"ListItem","position":3,"name":"Hajdú Ideállo","item":"<?= $base ?>/hajdu-ideallo-bojler-bemutato/"}]}]}
 </script>
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="float-btns">
@@ -43,8 +43,8 @@ $base='https://www.bojler-szerelo-budapest.hu';
       <h1>Hajdú Ideállo<br><span>Nagy Kapacitású Bojler – 50-150L</span></h1>
       <p class="hero-sub">A Hajdú Ideállo a nagyobb háztartások bojlere – 4+ személynek, 75–150L kapacitásban. Fürdőkád, több fürdőszoba, panzió – az Ideállo bírja. Debreceni gyártás, megbízható minőség, kiváló ár-érték arány.</p>
       <div class="hero-ctas">
-        <a href="<?= $phone_link ?>" class="btn-red">📞 Ideállo Szerviz</a>
-        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-orange">🔄 Ideállo Csere</a>
+        <a href="<?= $phone_link ?>" class="btn-primary">📞 Ideállo Szerviz</a>
+        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-secondary">🔄 Ideállo Csere</a>
       </div>
     </div>
     <div class="spec-card">
@@ -67,10 +67,10 @@ $base='https://www.bojler-szerelo-budapest.hu';
   </div>
 </section>
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Hajdú Ideállo bojler:</strong> A Hajdú Ideállo nagy kapacitású villanybojler 4+ személyes háztartásokba, 50–150L változatokban. 100L ára beépítéssel Budapesten 75.000–88.000 Ft. Debreceni gyártás, megbízható minőség. Szerviz, javítás, csere: Provi Domus Kft. – Tel: +36 70 164-4000.</p>
 </div>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Hajdú Ideállo <span>Kinek Való</span>?</h2>
     <div class="use-cases">
@@ -93,7 +93,7 @@ $base='https://www.bojler-szerelo-budapest.hu';
     </div>
   </div>
 </section>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Ideállo <span>Szerviz Árak</span></h2>
     <table class="price-table">
@@ -112,10 +112,10 @@ $base='https://www.bojler-szerelo-budapest.hu';
   <div class="section-inner">
     <h2 class="section-title">Kapcsolódó <span>Oldalak</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span>🟠</span><span>Hajdú Szerviz Budapest</span></a>
-      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span>💧</span><span>Hajdú Aquastic</span></a>
-      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span>📱</span><span>Hajdú Z Smart</span></a>
-      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span>🔄</span><span>Bojler Csere Budapest</span></a>
+      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="r-icon">🟠</span><span>Hajdú Szerviz Budapest</span></a>
+      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span class="r-icon">💧</span><span>Hajdú Aquastic</span></a>
+      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span class="r-icon">📱</span><span>Hajdú Z Smart</span></a>
+      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span class="r-icon">🔄</span><span>Bojler Csere Budapest</span></a>
     </div>
   </div>
 </section>

@@ -66,7 +66,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 }
 </script>
 
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -103,12 +103,12 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
       <p class="hero-sub">Hajdú Aquastic nem melegít? Z Smart nem reagál? Ideállo csöpög? Hajdú szakszervizként ismerjük minden Hajdú model sajátosságát és rendelkezünk az eredeti Hajdú alkatrészekkel. Debrecenből Budapest – a legjobb magyar bojler megérdemli a legjobb szervizt!</p>
       <div class="hero-ctas">
         <a href="<?= $phone_link ?>" class="btn-primary">📞 Hívjon Most – <?= $phone ?></a>
-        <a href="<?= $wa_link ?>" class="btn-orange" target="_blank">💬 WhatsApp</a>
+        <a href="<?= $wa_link ?>" class="btn-secondary" target="_blank">💬 WhatsApp</a>
       </div>
       <div class="hero-trust">
-        <div class="trust-badge">🇭🇺 Magyar gyártás</div>
-        <div class="trust-badge">⭐ 4.9/5 értékelés</div>
-        <div class="trust-badge">✅ 12 hó garancia</div>
+        <div class="trust-item">🇭🇺 Magyar gyártás</div>
+        <div class="trust-item">⭐ 4.9/5 értékelés</div>
+        <div class="trust-item">✅ 12 hó garancia</div>
       </div>
     </div>
     <div class="emergency-card">
@@ -135,12 +135,12 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Hajdú bojler javítás és csere Budapest:</strong> A Provi Domus Kft. Hajdú szakszervizként javítja és cseréli az összes Hajdú villanybojler modellt (Aquastic, Z Smart, Ideállo, Classic). Javítás ára: 10.000–22.000 Ft. Hajdú Aquastic 80L csere: 60.000–70.000 Ft (készülék + beépítés). Magyar gyártású, megbízható alkatrészek, 1-2 óra kiszállás. Tel: +36 70 164-4000.</p>
 </div>
 
 <!-- MODELS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Hajdú <span>Modellek Szerviz</span></h2>
     <p class="section-sub">Minden Hajdú villanybojler modellt javítunk és cserélünk</p>
@@ -227,37 +227,37 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     <h2 class="section-title">Hajdú Bojler <span>Hibák & Javítás</span></h2>
     <div class="symptoms-grid">
       <div class="symptom-card">
-        <div class="symptom-icon">🌡️</div>
+        <div class="s-icon">🌡️</div>
         <h3>Nem melegít a Hajdú bojler</h3>
         <p>A víz hideg marad, a bojler nem kapcsol be, vagy leáll melegítés közben.</p>
         <div class="symptom-price">Javítás: 12.000–22.000 Ft (fűtőszál)</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">💧</div>
+        <div class="s-icon">💧</div>
         <h3>Hajdú bojler csöpög</h3>
         <p>Víz csöpög az aljából, az anódrúd nyílásából, vagy a biztonsági szelep csöpög.</p>
         <div class="symptom-price">Javítás: 8.000–15.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🔊</div>
+        <div class="s-icon">🔊</div>
         <h3>Hangos Hajdú bojler</h3>
         <p>Erős robogás, kattogás melegítéskor – vízkőlerakódás a fűtőszálon.</p>
         <div class="symptom-price">Vízkőtelenítés: 12.000–18.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">⚡</div>
+        <div class="s-icon">⚡</div>
         <h3>Leveri a biztosítékot</h3>
         <p>A Hajdú bojler bekapcsolásakor leveri az áramkört – fűtőszál szigetelés hiba.</p>
         <div class="symptom-price">Javítás: 12.000–22.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">📱</div>
+        <div class="s-icon">📱</div>
         <h3>Z Smart app nem működik</h3>
         <p>A WiFi-s Hajdú Z Smart nem csatlakozik, az app nem éri el a bojlert.</p>
         <div class="symptom-price">Diagnózis + beállítás: 8.000–15.000 Ft</div>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🦠</div>
+        <div class="s-icon">🦠</div>
         <h3>Rozsdás, bűzös víz</h3>
         <p>A meleg víznek rozsdás íze vagy bűze van – anódrúd teljesen elhasználódott.</p>
         <div class="symptom-price">Anódrúd csere: 10.000–16.000 Ft</div>
@@ -267,7 +267,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- PRICES -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Hajdú Javítás <span>Árak 2025</span></h2>
     <table class="price-table">
@@ -311,16 +311,16 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   </div>
 </section>
 
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Hajdú <span>Modellek Bemutatói</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span class="icon">🟠</span><span>Hajdú Aquastic – Bemutató</span></a>
-      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span class="icon">📱</span><span>Hajdú Z Smart – WiFi</span></a>
-      <a href="<?= $base ?>/hajdu-ideallo-bojler-bemutato/" class="related-link"><span class="icon">💧</span><span>Hajdú Ideállo – Nagy Kapacitás</span></a>
-      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="icon">🔵</span><span>Ariston Szerviz Budapest</span></a>
-      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="icon">🔧</span><span>Bojler Javítás Budapest</span></a>
-      <a href="<?= $base ?>/bojler-vizkotelenites-budapest/" class="related-link"><span class="icon">🫧</span><span>Vízkőtelenítés Budapest</span></a>
+      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span class="r-icon">🟠</span><span>Hajdú Aquastic – Bemutató</span></a>
+      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span class="r-icon">📱</span><span>Hajdú Z Smart – WiFi</span></a>
+      <a href="<?= $base ?>/hajdu-ideallo-bojler-bemutato/" class="related-link"><span class="r-icon">💧</span><span>Hajdú Ideállo – Nagy Kapacitás</span></a>
+      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔵</span><span>Ariston Szerviz Budapest</span></a>
+      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔧</span><span>Bojler Javítás Budapest</span></a>
+      <a href="<?= $base ?>/bojler-vizkotelenites-budapest/" class="related-link"><span class="r-icon">🫧</span><span>Vízkőtelenítés Budapest</span></a>
     </div>
   </div>
 </section>

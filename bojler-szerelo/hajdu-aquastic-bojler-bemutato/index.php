@@ -15,7 +15,7 @@ $base='https://www.bojler-szerelo-budapest.hu';
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Product","name":"Hajdú Aquastic AQ80 ErP","brand":{"@type":"Brand","name":"Hajdú"},"description":"A Hajdú Aquastic az egyik legkedveltebb magyar villanybojler – megbízható, jó ár-érték arány, könnyen szervizelhető. 50-120L változatokban.","offers":{"@type":"Offer","price":"40000","priceCurrency":"HUF"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Főoldal","item":"<?= $base ?>/"},{"@type":"ListItem","position":2,"name":"Hajdú Szerviz","item":"<?= $base ?>/hajdu-bojler-csere-budapest/"},{"@type":"ListItem","position":3,"name":"Hajdú Aquastic","item":"<?= $base ?>/hajdu-aquastic-bojler-bemutato/"}]}]}
 </script>
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="float-btns">
@@ -43,8 +43,8 @@ $base='https://www.bojler-szerelo-budapest.hu';
       <h1>Hajdú Aquastic AQ ErP<br><span>Magyar Bojler – Teljes Bemutató</span></h1>
       <p class="hero-sub">A Hajdú Aquastic az egyik legtöbbet vásárolt magyar villanybojler – debreceni gyártás, kiváló ár-érték arány, könnyen szervizelhető, B energiaosztály. 50–120L változatokban, ErP szabványnak megfelelően.</p>
       <div class="hero-ctas">
-        <a href="<?= $phone_link ?>" class="btn-red">📞 Aquastic Szerviz</a>
-        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-orange">🔄 Aquastic Csere</a>
+        <a href="<?= $phone_link ?>" class="btn-primary">📞 Aquastic Szerviz</a>
+        <a href="<?= $base ?>/bojler-csere-budapest/" class="btn-secondary">🔄 Aquastic Csere</a>
       </div>
     </div>
     <div class="spec-card">
@@ -67,10 +67,10 @@ $base='https://www.bojler-szerelo-budapest.hu';
   </div>
 </section>
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Hajdú Aquastic bojler:</strong> A Hajdú Aquastic AQ ErP debreceni gyártású villanybojler, B energiaosztály, 2,0 kW fűtőszál, 80L ára beépítéssel Budapesten 60.000–70.000 Ft. Kiváló ár-érték arány, könnyen szervizelhető, alkatrészek elérhetők. Szerviz, javítás, csere: Provi Domus Kft. – Tel: +36 70 164-4000.</p>
 </div>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Hajdú Aquastic <span>Előnyök</span></h2>
     <div class="features-grid">
@@ -93,7 +93,7 @@ $base='https://www.bojler-szerelo-budapest.hu';
     <p style="color:#777;font-size:.82rem;text-align:center;margin-top:14px">* Beépítéssel és régi elszállítással. Pontos árat telefonon adunk.</p>
   </div>
 </section>
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Aquastic <span>Szerviz Árak</span></h2>
     <table class="price-table">
@@ -112,11 +112,11 @@ $base='https://www.bojler-szerelo-budapest.hu';
   <div class="section-inner">
     <h2 class="section-title">Kapcsolódó <span>Oldalak</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span>🟠</span><span>Hajdú Szerviz Budapest</span></a>
-      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span>📱</span><span>Hajdú Z Smart WiFi</span></a>
-      <a href="<?= $base ?>/hajdu-ideallo-bojler-bemutato/" class="related-link"><span>💧</span><span>Hajdú Ideállo</span></a>
-      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span>📘</span><span>Ariston Lydos</span></a>
-      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span>🔄</span><span>Bojler Csere Budapest</span></a>
+      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="r-icon">🟠</span><span>Hajdú Szerviz Budapest</span></a>
+      <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="related-link"><span class="r-icon">📱</span><span>Hajdú Z Smart WiFi</span></a>
+      <a href="<?= $base ?>/hajdu-ideallo-bojler-bemutato/" class="related-link"><span class="r-icon">💧</span><span>Hajdú Ideállo</span></a>
+      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span class="r-icon">📘</span><span>Ariston Lydos</span></a>
+      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span class="r-icon">🔄</span><span>Bojler Csere Budapest</span></a>
     </div>
   </div>
 </section>

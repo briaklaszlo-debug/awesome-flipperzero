@@ -118,10 +118,10 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
         <a href="<?= $wa_link ?>" class="btn-secondary" target="_blank">💬 WhatsApp</a>
       </div>
       <div class="hero-trust">
-        <div class="trust-badge">⭐ 4.9/5 értékelés</div>
-        <div class="trust-badge">✅ 12 hó garancia</div>
-        <div class="trust-badge">🧾 Számla, ÁFA</div>
-        <div class="trust-badge">📅 2011 óta</div>
+        <div class="trust-item">⭐ 4.9/5 értékelés</div>
+        <div class="trust-item">✅ 12 hó garancia</div>
+        <div class="trust-item">🧾 Számla, ÁFA</div>
+        <div class="trust-item">📅 2011 óta</div>
       </div>
     </div>
     <div class="emergency-card">
@@ -345,10 +345,10 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   <div class="section-inner">
     <h2 class="section-title">Kapcsolódó <span>Szolgáltatások</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="icon">🔧</span><span>Bojler Javítás</span></a>
-      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span class="icon">🔄</span><span>Bojler Csere</span></a>
-      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="icon">🔵</span><span>Ariston Szerviz</span></a>
-      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="icon">🟠</span><span>Hajdú Szerviz</span></a>
+      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔧</span><span>Bojler Javítás</span></a>
+      <a href="<?= $base ?>/bojler-csere-budapest/" class="related-link"><span class="r-icon">🔄</span><span>Bojler Csere</span></a>
+      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔵</span><span>Ariston Szerviz</span></a>
+      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="r-icon">🟠</span><span>Hajdú Szerviz</span></a>
     </div>
   </div>
 </section>

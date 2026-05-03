@@ -127,10 +127,10 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
         <a href="<?= $wa_link ?>" class="btn-secondary" target="_blank">💬 WhatsApp</a>
       </div>
       <div class="hero-trust">
-        <div class="trust-badge">⭐ 4.9/5 értékelés</div>
-        <div class="trust-badge">✅ 12 hó garancia</div>
-        <div class="trust-badge">🧾 Számla, ÁFA</div>
-        <div class="trust-badge">♻️ Régi elszállítás</div>
+        <div class="trust-item">⭐ 4.9/5 értékelés</div>
+        <div class="trust-item">✅ 12 hó garancia</div>
+        <div class="trust-item">🧾 Számla, ÁFA</div>
+        <div class="trust-item">♻️ Régi elszállítás</div>
       </div>
     </div>
     <div class="emergency-card">
@@ -157,12 +157,12 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Bojler csere Budapest:</strong> A Provi Domus Kft. teljes bojler cserét végez Budapest mind a 23 kerületébe – a régi bojler elbontásával, elszállításával és az új becsatlakoztatásával. A munkadíj 15.000–25.000 Ft. Népszerű modellek: Ariston Lydos 80L (55–65.000 Ft), Hajdú Aquastic 80L (45–55.000 Ft). 1-2 óra kiszállás, 12 hónap garancia, ÁFÁs számla. Tel: +36 70 164-4000.</p>
 </div>
 
 <!-- DECISION HELPER -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Javítás vagy <span>Csere</span>?</h2>
     <p class="section-sub">Segítünk dönteni – ez a kalkulátor útmutatást ad</p>
@@ -272,7 +272,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- PRICE TABLE -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Bojler Csere <span>Árak 2025</span></h2>
     <p class="section-sub">Munkadíj + készülék ár – a kiszállás az árban bennfoglalt</p>
@@ -333,16 +333,16 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- TRUST -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Miért <span>Minket Válasszon</span>?</h2>
     <div class="trust-grid">
-      <div class="trust-card"><div class="icon">🏭</div><h3>Gyártói Alkatrész</h3><p>Csak eredeti Ariston, Hajdú alkatrészekkel dolgozunk</p></div>
-      <div class="trust-card"><div class="icon">♻️</div><h3>Elszállítás</h3><p>A régi bojlert szabályosan elszállítjuk és ártalmatlanítjuk</p></div>
-      <div class="trust-card"><div class="icon">⚡</div><h3>Gyors Csere</h3><p>2-3 óra alatt kész – aznap van meleg víz</p></div>
-      <div class="trust-card"><div class="icon">💰</div><h3>Legjobb Ár</h3><p>Versenyképes árak, nincs rejtett díj</p></div>
-      <div class="trust-card"><div class="icon">🔧</div><h3>13 Év Tapasztalat</h3><p>2011 óta több mint 2.800 bojler cserét végeztünk</p></div>
-      <div class="trust-card"><div class="icon">📋</div><h3>Garancialevél</h3><p>Írásban, bélyegzővel – minden elvégzett munkára</p></div>
+      <div class="trust-card"><div class="t-icon">🏭</div><h3>Gyártói Alkatrész</h3><p>Csak eredeti Ariston, Hajdú alkatrészekkel dolgozunk</p></div>
+      <div class="trust-card"><div class="t-icon">♻️</div><h3>Elszállítás</h3><p>A régi bojlert szabályosan elszállítjuk és ártalmatlanítjuk</p></div>
+      <div class="trust-card"><div class="t-icon">⚡</div><h3>Gyors Csere</h3><p>2-3 óra alatt kész – aznap van meleg víz</p></div>
+      <div class="trust-card"><div class="t-icon">💰</div><h3>Legjobb Ár</h3><p>Versenyképes árak, nincs rejtett díj</p></div>
+      <div class="trust-card"><div class="t-icon">🔧</div><h3>13 Év Tapasztalat</h3><p>2011 óta több mint 2.800 bojler cserét végeztünk</p></div>
+      <div class="trust-card"><div class="t-icon">📋</div><h3>Garancialevél</h3><p>Írásban, bélyegzővel – minden elvégzett munkára</p></div>
     </div>
   </div>
 </section>
@@ -377,7 +377,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 </section>
 
 <!-- DISTRICTS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Bojler Csere <span>Minden Kerületbe</span></h2>
     <div class="district-grid">
@@ -401,12 +401,12 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   <div class="section-inner">
     <h2 class="section-title">Kapcsolódó <span>Szolgáltatások</span></h2>
     <div class="related-grid">
-      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="icon">🔧</span><span>Bojler Javítás Budapest</span></a>
-      <a href="<?= $base ?>/bojler-vizkotelenites-budapest/" class="related-link"><span class="icon">🫧</span><span>Vízkőtelenítés</span></a>
-      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="icon">🔵</span><span>Ariston Szerviz</span></a>
-      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="icon">🟠</span><span>Hajdú Szerviz</span></a>
-      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span class="icon">📘</span><span>Ariston Lydos</span></a>
-      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span class="icon">📙</span><span>Hajdú Aquastic</span></a>
+      <a href="<?= $base ?>/bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔧</span><span>Bojler Javítás Budapest</span></a>
+      <a href="<?= $base ?>/bojler-vizkotelenites-budapest/" class="related-link"><span class="r-icon">🫧</span><span>Vízkőtelenítés</span></a>
+      <a href="<?= $base ?>/ariston-bojler-javitas-budapest/" class="related-link"><span class="r-icon">🔵</span><span>Ariston Szerviz</span></a>
+      <a href="<?= $base ?>/hajdu-bojler-csere-budapest/" class="related-link"><span class="r-icon">🟠</span><span>Hajdú Szerviz</span></a>
+      <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/" class="related-link"><span class="r-icon">📘</span><span>Ariston Lydos</span></a>
+      <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/" class="related-link"><span class="r-icon">📙</span><span>Hajdú Aquastic</span></a>
     </div>
   </div>
 </section>
