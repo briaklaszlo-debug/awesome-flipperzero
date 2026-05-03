@@ -73,8 +73,8 @@ img { max-width: 100%; height: auto; display: block; }
 .logo a:hover { text-decoration: none; }
 .logo .logo-icon { color: var(--orange); }
 
-nav { display: flex; gap: 4px; flex-wrap: wrap; }
-nav a {
+.site-header nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.site-header nav a {
   color: #bbb;
   font-size: .82rem;
   padding: 5px 9px;
@@ -82,8 +82,8 @@ nav a {
   text-decoration: none;
   transition: color .15s, background .15s;
 }
-nav a:hover { color: var(--orange); background: rgba(255,107,0,.08); text-decoration: none; }
-nav a.active { color: var(--orange); font-weight: 700; }
+.site-header nav a:hover { color: var(--orange); background: rgba(255,107,0,.08); text-decoration: none; }
+.site-header nav a.active { color: var(--orange); font-weight: 700; }
 
 .header-phone a {
   background: var(--red);
@@ -969,7 +969,7 @@ nav a.active { color: var(--orange); font-weight: 700; }
 }
 
 @media (max-width: 860px) {
-  nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; border-top: 1px solid #1a1a1a; padding: 10px; gap: 2px; z-index: 200; }
+  .site-header nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; border-top: 1px solid #1a1a1a; padding: 10px; gap: 2px; z-index: 200; }
   #nav-check:checked ~ .header-inner nav { display: flex; }
   .header-inner { position: relative; flex-wrap: nowrap; }
   .nav-toggle { display: flex; }
