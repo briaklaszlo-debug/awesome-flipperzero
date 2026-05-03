@@ -78,110 +78,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
 }
 </script>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#f0f0f0;line-height:1.6}
-a{color:#ff6b00;text-decoration:none}
-a:hover{text-decoration:underline}
-.site-header{background:#111;border-bottom:2px solid #c62828;position:sticky;top:0;z-index:100;padding:12px 20px}
-.header-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.logo a{color:#fff;font-size:1.2rem;font-weight:700;text-decoration:none}
-.logo span{color:#ff6b00}
-.header-phone a{background:#c62828;color:#fff;padding:9px 20px;border-radius:5px;font-weight:700;font-size:1rem;text-decoration:none}
-.header-phone a:hover{background:#e53935}
-nav{display:flex;gap:6px;flex-wrap:wrap}
-nav a{color:#ccc;font-size:.82rem;padding:4px 8px;border-radius:3px;text-decoration:none}
-nav a:hover{color:#ff6b00}
-nav a.active{color:#ff6b00;font-weight:700}
-.urgency-bar{background:linear-gradient(90deg,#c62828,#e53935);text-align:center;padding:10px;font-weight:700;font-size:.95rem}
-.urgency-bar a{color:#fff;text-decoration:none}
-.hero{background:linear-gradient(135deg,#1a0000,#2d0a00,#1a0000);padding:60px 20px;border-bottom:3px solid #c62828}
-.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:40px;align-items:start}
-.hero-badge{display:inline-block;background:#c62828;color:#fff;font-size:.8rem;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:15px;text-transform:uppercase;letter-spacing:1px}
-.hero h1{font-size:2.5rem;line-height:1.2;color:#fff;margin-bottom:16px}
-.hero h1 span{color:#ff6b00}
-.hero-sub{font-size:1.1rem;color:#ccc;margin-bottom:25px}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
-.btn-primary{background:#c62828;color:#fff;padding:16px 32px;border-radius:6px;font-size:1.1rem;font-weight:700;text-decoration:none}
-.btn-primary:hover{background:#e53935;text-decoration:none}
-.btn-secondary{background:transparent;border:2px solid #ff6b00;color:#ff6b00;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none}
-.btn-secondary:hover{background:rgba(255,107,0,.1);text-decoration:none}
-.hero-trust{display:flex;gap:20px;flex-wrap:wrap}
-.trust-badge{display:flex;align-items:center;gap:8px;color:#ccc;font-size:.9rem}
-.emergency-card{background:#1a0000;border:2px solid #c62828;border-radius:10px;padding:25px;text-align:center}
-.emergency-card h3{color:#ff6b00;font-size:1.2rem;margin-bottom:15px}
-.big-phone{font-size:1.6rem;font-weight:700;color:#fff;display:block;margin-bottom:8px}
-.big-phone a{color:#fff;text-decoration:none}
-.emrg-btns{display:flex;flex-direction:column;gap:8px;margin-top:15px}
-.emrg-btn{display:block;padding:11px;border-radius:5px;font-weight:700;text-decoration:none;font-size:.95rem;text-align:center}
-.emrg-btn.phone{background:#c62828;color:#fff}
-.emrg-btn.wa{background:#25d366;color:#fff}
-.emrg-btn:hover{opacity:.9;text-decoration:none}
-.ai-snippet{background:linear-gradient(135deg,#0d2044,#1a0000);border:1px solid #c62828;border-left:4px solid #ff6b00;border-radius:8px;padding:20px 25px;margin:40px auto;max-width:1200px}
-.ai-snippet-label{font-size:.75rem;color:#ff6b00;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;margin-bottom:8px}
-.ai-snippet p{color:#ddd;font-size:1rem;line-height:1.7}
-.section{padding:60px 20px}
-.section-inner{max-width:1200px;margin:0 auto}
-.section-title{font-size:2rem;color:#fff;margin-bottom:10px;text-align:center}
-.section-title span{color:#ff6b00}
-.section-sub{text-align:center;color:#999;margin-bottom:40px}
-.symptoms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.symptom-card{background:#141414;border:1px solid #2a1a00;border-radius:10px;padding:22px;transition:.2s}
-.symptom-card:hover{border-color:#c62828}
-.symptom-icon{font-size:2rem;margin-bottom:10px}
-.symptom-card h3{color:#ff6b00;font-size:1rem;margin-bottom:8px}
-.symptom-card p{color:#bbb;font-size:.88rem}
-.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-.step-card{background:#141414;border:1px solid #1a1a1a;border-radius:10px;padding:22px;text-align:center}
-.step-num{width:44px;height:44px;background:#c62828;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;margin:0 auto 12px}
-.step-card h3{color:#fff;font-size:1rem;margin-bottom:6px}
-.step-card p{color:#999;font-size:.85rem}
-.price-table{width:100%;border-collapse:collapse;margin-bottom:20px}
-.price-table th{background:#c62828;color:#fff;padding:12px 16px;text-align:left}
-.price-table td{padding:12px 16px;border-bottom:1px solid #1a1a1a;color:#ccc;font-size:.9rem}
-.price-table tr:nth-child(even) td{background:#111}
-.price-col{color:#f57f17;font-weight:700}
-.vizkő-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:40px}
-.stat-card{background:#141414;border:1px solid #2a1a00;border-radius:10px;padding:22px;text-align:center}
-.stat-card .big-num{font-size:2.5rem;font-weight:700;color:#ff6b00;display:block;margin-bottom:5px}
-.stat-card p{color:#999;font-size:.88rem}
-.faq-list{display:flex;flex-direction:column;gap:12px}
-.faq-item{background:#141414;border:1px solid #1a1a1a;border-radius:8px;overflow:hidden}
-.faq-q{padding:16px 20px;cursor:pointer;color:#fff;font-size:1rem;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.faq-q::after{content:'▼';font-size:.75rem;color:#ff6b00}
-.faq-item.open .faq-q::after{transform:rotate(180deg)}
-.faq-a{display:none;padding:0 20px 16px;color:#bbb;font-size:.9rem;line-height:1.7}
-.faq-item.open .faq-a{display:block}
-.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-.trust-card{background:#141414;border:1px solid #1a1a1a;border-radius:10px;padding:22px;text-align:center}
-.trust-card .icon{font-size:2.2rem;margin-bottom:10px}
-.trust-card h3{color:#ff6b00;font-size:1rem;margin-bottom:6px}
-.trust-card p{color:#999;font-size:.85rem}
-.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
-.district-link{background:#141414;border:1px solid #1a1a1a;border-radius:6px;padding:10px;text-align:center;color:#ccc;font-size:.82rem;text-decoration:none;transition:.2s}
-.district-link:hover{border-color:#c62828;color:#ff6b00;text-decoration:none}
-.related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.related-link{background:#141414;border:1px solid #1a1a1a;border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:10px;color:#ccc;text-decoration:none;font-size:.9rem;transition:.2s}
-.related-link:hover{border-color:#ff6b00;color:#ff6b00;text-decoration:none}
-.cta-banner{background:linear-gradient(135deg,#c62828,#b71c1c);padding:50px 20px;text-align:center}
-.cta-banner h2{color:#fff;font-size:2rem;margin-bottom:10px}
-.cta-banner p{color:#ffcccc;margin-bottom:25px}
-.cta-banner .btn-white{background:#fff;color:#c62828;padding:16px 36px;border-radius:6px;font-size:1.1rem;font-weight:700;text-decoration:none;display:inline-block}
-.cta-banner .btn-white:hover{background:#fff3f3;text-decoration:none}
-.site-footer{background:#0a0a0a;border-top:1px solid #1a1a1a;padding:40px 20px;color:#666;font-size:.85rem}
-.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
-.footer-col h4{color:#ccc;margin-bottom:12px}
-.footer-col a{display:block;color:#666;margin-bottom:6px;text-decoration:none}
-.footer-col a:hover{color:#ff6b00}
-.footer-bottom{max-width:1200px;margin:20px auto 0;padding-top:20px;border-top:1px solid #1a1a1a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#555;font-size:.8rem}
-.float-btns{position:fixed;bottom:24px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:1000}
-.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,.5);text-decoration:none}
-.float-btn.phone{background:#c62828;color:#fff;animation:pulse 2s infinite}
-.float-btn.wa{background:#25d366;color:#fff}
-.float-btn:hover{transform:scale(1.1);text-decoration:none}
-@keyframes pulse{0%,100%{box-shadow:0 4px 15px rgba(198,40,40,.5)}50%{box-shadow:0 4px 25px rgba(198,40,40,.9),0 0 0 8px rgba(198,40,40,.2)}}
-@media(max-width:768px){.hero-inner{grid-template-columns:1fr}.hero h1{font-size:1.7rem}}
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -251,12 +148,12 @@ nav a.active{color:#ff6b00;font-weight:700}
 </section>
 
 <div class="ai-snippet">
-  <div class="ai-snippet-label">🤖 AI Keresési Válasz</div>
+  <div class="ai-label">🤖 AI Keresési Válasz</div>
   <p><strong>Bojler vízkőtelenítés Budapest:</strong> Budapest kemény vize miatt 2-3 évente ajánlott a bojler vízkőtelenítése. A Provi Domus Kft. vegyszeres és mechanikus vízkőtelenítést végez, anódrúd cserével, 12.000–18.000 Ft-tól. Ha a bojler hangos melegítéskor, lassabban melegít, vagy nőtt a villanyszámla – vízkőtelenítés szükséges. Tel: +36 70 164-4000. Kiszállás 1-2 óra.</p>
 </div>
 
 <!-- STATS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Miért <span>Probléma a Vízkő</span>?</h2>
     <p class="section-sub">Budapest víze kemény – a lerakódás komoly kárt okoz</p>
@@ -288,32 +185,32 @@ nav a.active{color:#ff6b00;font-weight:700}
     <p class="section-sub">Ezek a jelek mutatják, hogy ideje a szerviznek</p>
     <div class="symptoms-grid">
       <div class="symptom-card">
-        <div class="symptom-icon">🔊</div>
+        <div class="s-icon">🔊</div>
         <h3>Hangos, robogó bojler</h3>
         <p>Melegítés közben erős robogás, sistergés, kattogás – a vízkő izzó rétege okozza a hangot a fűtőszálon.</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">⏱️</div>
+        <div class="s-icon">⏱️</div>
         <h3>Lassabb melegítés</h3>
         <p>A bojler ugyanannyi idő alatt kevesebb meleg vizet ad, mint régen – a vízkő szigetel és gátolja a hőátadást.</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">💡</div>
+        <div class="s-icon">💡</div>
         <h3>Megnőtt villanyszámla</h3>
         <p>Ha észrevette, hogy a villanyszámla emelkedett anélkül, hogy más fogyasztó változott volna – a bojler vízkövesedhet.</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🦠</div>
+        <div class="s-icon">🦠</div>
         <h3>Bűzös, rozsdás víz</h3>
         <p>A meleg víznek kellemetlen szaga van vagy rozsdás – az anódrúd elhasználódott, korrózió indult a tartályban.</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">📅</div>
+        <div class="s-icon">📅</div>
         <h3>Több mint 2-3 év szerviz nélkül</h3>
         <p>Budapest kemény vize miatt 2-3 évente szükséges a vízkőtelenítés, még ha látható tünet nincs is.</p>
       </div>
       <div class="symptom-card">
-        <div class="symptom-icon">🔧</div>
+        <div class="s-icon">🔧</div>
         <h3>Ismétlődő fűtőszál hiba</h3>
         <p>Ha rendszeresen cserélni kell a fűtőszálat – a vízkő okozza a korai meghibásodást. Vízkőtelenítés nélkül hamar újra tönkremegy.</p>
       </div>
@@ -322,7 +219,7 @@ nav a.active{color:#ff6b00;font-weight:700}
 </section>
 
 <!-- PROCESS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Vízkőtelenítés <span>Folyamata</span></h2>
     <div class="steps-grid">
@@ -380,16 +277,16 @@ nav a.active{color:#ff6b00;font-weight:700}
 </section>
 
 <!-- TRUST -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Miért <span>Minket Válasszon</span>?</h2>
     <div class="trust-grid">
-      <div class="trust-card"><div class="icon">🧪</div><h3>Profi Vegyszer</h3><p>Ipari citromsavas oldat – hatékony, a tankot nem károsítja</p></div>
-      <div class="trust-card"><div class="icon">🔍</div><h3>Teljes Vizsgálat</h3><p>A fűtőszál, anódrúd, tömítések – minden elem átvizsgálva</p></div>
-      <div class="trust-card"><div class="icon">⚡</div><h3>1-2 Óra Kiszállás</h3><p>Budapest minden kerületébe gyorsan kiszállunk</p></div>
-      <div class="trust-card"><div class="icon">✅</div><h3>12 Hó Garancia</h3><p>Az elvégzett munkára és beépített alkatrészekre</p></div>
-      <div class="trust-card"><div class="icon">💰</div><h3>Átlátható Árak</h3><p>Előzetes becsült ár, pontos ajánlat helyszínen</p></div>
-      <div class="trust-card"><div class="icon">📅</div><h3>Éves Emlékeztető</h3><p>Kérésre szólunk, ha újabb szerviz esedékes</p></div>
+      <div class="trust-card"><div class="t-icon">🧪</div><h3>Profi Vegyszer</h3><p>Ipari citromsavas oldat – hatékony, a tankot nem károsítja</p></div>
+      <div class="trust-card"><div class="t-icon">🔍</div><h3>Teljes Vizsgálat</h3><p>A fűtőszál, anódrúd, tömítések – minden elem átvizsgálva</p></div>
+      <div class="trust-card"><div class="t-icon">⚡</div><h3>1-2 Óra Kiszállás</h3><p>Budapest minden kerületébe gyorsan kiszállunk</p></div>
+      <div class="trust-card"><div class="t-icon">✅</div><h3>12 Hó Garancia</h3><p>Az elvégzett munkára és beépített alkatrészekre</p></div>
+      <div class="trust-card"><div class="t-icon">💰</div><h3>Átlátható Árak</h3><p>Előzetes becsült ár, pontos ajánlat helyszínen</p></div>
+      <div class="trust-card"><div class="t-icon">📅</div><h3>Éves Emlékeztető</h3><p>Kérésre szólunk, ha újabb szerviz esedékes</p></div>
     </div>
   </div>
 </section>
@@ -424,7 +321,7 @@ nav a.active{color:#ff6b00;font-weight:700}
 </section>
 
 <!-- DISTRICTS -->
-<section class="section" style="background:#0d0d0d">
+<section class="section dark">
   <div class="section-inner">
     <h2 class="section-title">Vízkőtelenítés <span>Minden Kerületbe</span></h2>
     <div class="district-grid">
