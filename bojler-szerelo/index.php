@@ -783,3 +783,615 @@ strong{color:var(--text);font-weight:700}
   .stat-n{font-size:1.6rem}
 }
 </style>
+</head>
+<body>
+
+<!-- SÜRGŐSSÉGI SÁV -->
+<div class="alert-bar">
+  🔥 Bojler meghibásodás? Azonnal hívható: <a href="<?= $phone_link ?>"><?= $phone ?></a> &nbsp;–&nbsp; 0-24, hétvégén is
+</div>
+
+<!-- FEJLÉC -->
+<header class="site-header">
+  <input type="checkbox" id="nav-check">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/">
+        <div class="logo-mark">🔥</div>
+        <div>Provi Domus Kft.<span class="logo-sub">Bojler Szerelő Budapest</span></div>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Főnavigáció">
+      <a href="/">Főoldal</a>
+      <a href="/bojler-javitas-budapest/">Bojler javítás</a>
+      <a href="/bojler-csere-budapest/">Bojler csere</a>
+      <a href="/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a>
+      <a href="/ariston-bojler-javitas-budapest/">Ariston</a>
+      <a href="/hajdu-bojler-csere-budapest/">Hajdú</a>
+      <a href="/blog/">Blog</a>
+      <a href="/ajanlatkeres/">Árajánlat</a>
+      <a href="/kapcsolat/">Kapcsolat</a>
+    </nav>
+    <div class="h-cta">
+      <a href="<?= $phone_link ?>" class="btn-hcall">
+        📞 <?= $phone ?>
+        <small>0-24 · Azonnal</small>
+      </a>
+      <label for="nav-check" class="nav-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-wrap">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-panic">🚨 Azonnali segítség elérhető</div>
+        <h1>Bojler <em>nem melegít?</em><br>Hívjon most – 1-2 óra alatt ott vagyunk.</h1>
+        <p class="hero-desc">
+          Villanybojler javítás, csere, Ariston és Hajdú szerviz Budapest minden kerületében –
+          <strong style="color:#ffcc02">2011 óta</strong>, garanciával, korrekt áron, 0-24.
+        </p>
+        <div class="hero-checklist">
+          <span class="hc-item">✅ 2011 óta megbízható</span>
+          <span class="hc-item">⚡ 1–2 óra kiszállás</span>
+          <span class="hc-item">🔒 Törvényes garancia</span>
+          <span class="hc-item">📋 Számlás munka</span>
+          <span class="hc-item">🌙 0-24 éjjel-nappal</span>
+          <span class="hc-item">🏷️ Ariston &amp; Hajdú szakszerviz</span>
+        </div>
+        <div class="hero-btns">
+          <a href="<?= $phone_link ?>" class="btn-hero-call">📞 Hívjon most: <?= $phone ?></a>
+          <a href="<?= $wa_link ?>" class="btn-hero-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+        <div class="hero-signals">
+          <span class="sig">🏆 4.9★ – 143 Google vélemény</span>
+          <span class="sig">📍 Budapest 1–23. kerület + Pest megye</span>
+          <span class="sig">🔧 Raktáron tartott alkatrészek</span>
+        </div>
+      </div>
+
+      <div class="hero-sidebar">
+        <div class="hero-card">
+          <div class="hc-urgent">
+            <span class="u-label">🚨 Sürgős kiszállás</span>
+            <a href="<?= $phone_link ?>" class="u-phone"><?= $phone ?></a>
+            <span class="u-sub">0–24 · Hétfő–Vasárnap</span>
+          </div>
+          <a href="<?= $phone_link ?>" class="btn-call-red">📞 Hívás most</a>
+          <a href="<?= $wa_link ?>" class="btn-wa-green" target="_blank" rel="noopener">💬 WhatsApp üzenet</a>
+          <div class="hc-problems">
+            <p>Mikor hívjon?</p>
+            <ul class="prob-list">
+              <li>🔴 Nem melegít a bojler</li>
+              <li>🔴 Leveri a biztosítékot</li>
+              <li>🔴 Csöpög, szivárog</li>
+              <li>🔴 Rozsdás víz folyik</li>
+              <li>🔴 Csökkent kapacitás</li>
+              <li>🟡 Vízkőtelenítés esedékes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SÁV -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-n">2011</span><div class="stat-l">óta működünk</div></div>
+    <div class="stat"><span class="stat-n">1–2h</span><div class="stat-l">kiszállási idő</div></div>
+    <div class="stat"><span class="stat-n">23</span><div class="stat-l">Budapest kerület</div></div>
+    <div class="stat"><span class="stat-n">4.9★</span><div class="stat-l">Google értékelés</div></div>
+  </div>
+</div>
+
+<!-- AI SNIPPET BLOKK -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="ai-snippet">
+      <div class="ai-label">🤖 Gyors válasz – AI &amp; Google kiemelt snippet</div>
+      <h3>Bojler szerelő Budapest – Amit azonnal tudni kell</h3>
+      <p>A <strong style="color:#ffab00">Provi Domus Kft.</strong> villanybojler javítást, cserét és vízkőtelenítést végez Budapest mind a 23 kerületében, 2011 óta. Munkadíj: <strong style="color:#ffab00">10.000–35.000 Ft</strong>. Kiszállási idő sürgős esetben: <strong style="color:#ffab00">1–2 óra</strong>. Telefon: <strong style="color:#ffab00"><?= $phone ?></strong>, 0-24.</p>
+      <p>A leggyakoribb bojler meghibásodások: elégett fűtőszál (nem melegszik a víz), elromlott termosztát, leoldott biztonsági hőkapcsoló (leveri a biztosítékot), vagy vastag vízkőréteg (lassú melegítés). Ariston és Hajdú márka szakszerviz, eredeti alkatrészekkel, garanciával.</p>
+    </div>
+
+    <!-- SZOLGÁLTATÁSOK -->
+    <span class="tag tag-fire">Szolgáltatásaink</span>
+    <h2 class="sec-title">Bojler Szerelési Szolgáltatások Budapesten</h2>
+    <p class="sec-sub">Teljes körű villanybojler szerviz – javítástól cseréig, minden márkához, Budapest egész területén.</p>
+
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🔧</div>
+        <div class="svc-price">10.000 – 28.000 Ft</div>
+        <h3>Bojler Javítás Budapest</h3>
+        <p>Helyszíni diagnózis után pontos ár. Nem melegít, leveri a biztosítékot, vagy csöpög? Megoldjuk.</p>
+        <ul class="svc-list">
+          <li>Fűtőszál csere (leggyakoribb hiba)</li>
+          <li>Termosztát csere és beállítás</li>
+          <li>Biztonsági szelep csere</li>
+          <li>Biztonsági hőkapcsoló reset / csere</li>
+          <li>Elektromos hiba diagnosztika</li>
+        </ul>
+        <a href="/bojler-javitas-budapest/" class="svc-link">Részletek a bojler javításról →</a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🔄</div>
+        <div class="svc-price">15.000 – 35.000 Ft</div>
+        <h3>Bojler Csere Budapest</h3>
+        <p>Régi bojler leszedése, elszállítása, új bojler felszerelése és bekötése – 2–3 óra alatt.</p>
+        <ul class="svc-list">
+          <li>Régi bojler biztonságos eltávolítása</li>
+          <li>Új bojler felszerelése és bekötése</li>
+          <li>Tömörségi próba, beüzemelés</li>
+          <li>Régi készülék elszállítása</li>
+          <li>Ariston, Hajdú, Bosch választható</li>
+        </ul>
+        <a href="/bojler-csere-budapest/" class="svc-link">Részletek a bojler cseréről →</a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">💧</div>
+        <div class="svc-price">12.000 – 20.000 Ft</div>
+        <h3>Vízkőtelenítés Budapest</h3>
+        <p>Éves karbantartás: anódrúd csere, biztonsági szelep ellenőrzés, vízkőréteg eltávolítás.</p>
+        <ul class="svc-list">
+          <li>Anódrúd ellenőrzés és csere</li>
+          <li>Biztonsági szelep tesztelés</li>
+          <li>Belső vízkőréteg megszüntetése</li>
+          <li>Tömörségi vizsgálat</li>
+          <li>Élettartam meghosszabbítás 3–5 évvel</li>
+        </ul>
+        <a href="/bojler-vizkotelenites-budapest/" class="svc-link">Részletek a vízkőtelenítésről →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÜNETEK / HIBAKÓD BLOKK -->
+<section class="section">
+  <div class="container">
+    <span class="tag tag-fire">Diagnosztika</span>
+    <h2 class="sec-title">Bojler Tünetek – Mi Okozza és Mennyibe Kerül?</h2>
+    <p class="sec-sub">Ismerje fel a hibát – tudja meg előre a várható javítási költséget.</p>
+    <div class="symptom-grid">
+      <div class="symptom-card">
+        <div class="sym-icon">❄️</div>
+        <div class="sym-title">Nem melegít a bojler</div>
+        <div class="sym-cause">Ok: elégett fűtőszál, elromlott termosztát, vagy leoldott hőkapcsoló.</div>
+        <div class="sym-price">Javítás: 12.000–22.000 Ft</div>
+      </div>
+      <div class="symptom-card">
+        <div class="sym-icon">⚡</div>
+        <div class="sym-title">Leveri a biztosítékot</div>
+        <div class="sym-cause">Ok: nedves vagy sérült fűtőszál – a szigetelés megsérült, földre szivárog az áram.</div>
+        <div class="sym-price">Javítás: 14.000–24.000 Ft</div>
+      </div>
+      <div class="symptom-card">
+        <div class="sym-icon">💧</div>
+        <div class="sym-title">Csöpög a biztonsági szelep</div>
+        <div class="sym-cause">Ok: elhasználódott szelep vagy túlnyomás a rendszerben. Ne ragassza le!</div>
+        <div class="sym-price">Javítás: 8.000–15.000 Ft</div>
+      </div>
+      <div class="symptom-card">
+        <div class="sym-icon">🐌</div>
+        <div class="sym-title">Lassan melegít a víz</div>
+        <div class="sym-cause">Ok: vastag vízkőréteg szigeteli a fűtőszálat. 5+ mm vízkő = 30–50% hatékonyságveszteség.</div>
+        <div class="sym-price">Vízkőtelenítés: 12.000–20.000 Ft</div>
+      </div>
+      <div class="symptom-card">
+        <div class="sym-icon">🦀</div>
+        <div class="sym-title">Rozsdás víz folyik</div>
+        <div class="sym-cause">Ok: elhasználódott anódrúd – a tartály belülről korrodál. Cserét javasoljuk.</div>
+        <div class="sym-price">Csere: 15.000–35.000 Ft</div>
+      </div>
+      <div class="symptom-card">
+        <div class="sym-icon">💥</div>
+        <div class="sym-title">Korog, zajos a bojler</div>
+        <div class="sym-cause">Ok: vastag vízkőréteg a fűtőszálon – hő hatására "pattog". Sürgős vízkőtelenítést igényel.</div>
+        <div class="sym-price">Karbantartás: 12.000–18.000 Ft</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÁRKÁK -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="tag tag-fire">Márkák</span>
+    <h2 class="sec-title">Ariston és Hajdú Szakszerviz Budapesten</h2>
+    <p class="sec-sub">Mindkét vezető márka készülékeit javítjuk és cseréljük – eredeti alkatrészekkel, gyártói előírások szerint.</p>
+    <div class="brand-grid">
+      <div class="brand-card brand-ariston">
+        <div class="brand-header">
+          <div class="brand-icon">🔴</div>
+          <div>
+            <div class="brand-name">Ariston</div>
+            <div class="brand-sub">Olasz minőség – modern, helytakarékos</div>
+          </div>
+        </div>
+        <div class="brand-types">
+          <a href="/ariston-lydos-bojler-bemutato/" class="btype">Lydos</a>
+          <a href="/ariston-velis-bojler-bemutato/" class="btype">Velis</a>
+          <a href="/ariston-pro1-eco-bojler-bemutato/" class="btype">Pro1 Eco</a>
+          <a href="/ariston-bojler-javitas-budapest/" class="btype">Szerviz →</a>
+        </div>
+        <ul class="brand-features">
+          <li>✓ Lapos, helytakarékos kialakítás</li>
+          <li>✓ Időzítős, okos modellek</li>
+          <li>✓ Modern fürdőszobába ideális</li>
+          <li>✓ Eredeti Ariston alkatrészek raktáron</li>
+          <li>✓ E-TECH technológia – energiatakarékos</li>
+        </ul>
+        <a href="/ariston-bojler-javitas-budapest/" class="brand-link">Ariston szerviz →</a>
+      </div>
+
+      <div class="brand-card brand-hajdu">
+        <div class="brand-header">
+          <div class="brand-icon">🔵</div>
+          <div>
+            <div class="brand-name">Hajdú</div>
+            <div class="brand-sub">Magyar gyártó – tartós, megbízható</div>
+          </div>
+        </div>
+        <div class="brand-types">
+          <a href="/hajdu-aquastic-bojler-bemutato/" class="btype">Aquastic</a>
+          <a href="/hajdu-z-smart-bojler-bemutato/" class="btype">Z Smart</a>
+          <a href="/hajdu-ideallo-bojler-bemutato/" class="btype">Ideallo</a>
+          <a href="/hajdu-bojler-csere-budapest/" class="btype">Csere →</a>
+        </div>
+        <ul class="brand-features">
+          <li>✓ Magyar gyártmány – könnyen szervizelhető</li>
+          <li>✓ Nagy kapacitás – 80–200 liter</li>
+          <li>✓ Kertes házba, nagy fogyasztáshoz</li>
+          <li>✓ Eredeti Hajdú alkatrészek raktáron</li>
+          <li>✓ Aquastic okos vezérlés lehetséges</li>
+        </ul>
+        <a href="/hajdu-bojler-csere-budapest/" class="brand-link">Hajdú csere →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JAVÍTÁS vs CSERE DÖNTÉSSEGÉD -->
+<section class="section">
+  <div class="container">
+    <span class="tag tag-fire">Döntéssegéd</span>
+    <h2 class="sec-title">Javítás vagy Csere? – Így Döntse El</h2>
+    <p class="sec-sub">Telefonon is segítünk eldönteni – de íme a szakmai szempontok.</p>
+    <div class="decision-grid">
+      <div class="dec-card dec-fix">
+        <div class="dec-header"><div class="dec-icon">🔧</div><div class="dec-title">Javítás javasolt, ha...</div></div>
+        <ul class="dec-list">
+          <li>✅ A készülék 7 évnél fiatalabb</li>
+          <li>✅ A tartály ép, nem szivárog</li>
+          <li>✅ Egyetlen alkatrész hibás</li>
+          <li>✅ A javítás ára &lt; csere 40%-a</li>
+          <li>✅ Nem folyik rozsdás víz</li>
+          <li>✅ Első meghibásodás</li>
+        </ul>
+        <span class="dec-badge">💰 Megéri javítani</span>
+      </div>
+      <div class="dec-card dec-replace">
+        <div class="dec-header"><div class="dec-icon">🔄</div><div class="dec-title">Csere javasolt, ha...</div></div>
+        <ul class="dec-list">
+          <li>⚠️ A készülék 12+ éves</li>
+          <li>⚠️ Rozsdás vizet ad ki</li>
+          <li>⚠️ Szivárog a tartály</li>
+          <li>⚠️ Ismételt meghibásodások</li>
+          <li>⚠️ Megnőtt energiafelhasználás</li>
+          <li>⚠️ Javítás ára &gt; csere 50%-a</li>
+        </ul>
+        <span class="dec-badge">🔄 Érdemesebb cserélni</span>
+      </div>
+    </div>
+    <p style="margin-top:1.25rem;font-size:.88rem;color:var(--text-light);padding:.75rem 1rem;background:var(--gray-light);border-radius:var(--radius-sm);border-left:3px solid var(--amber)">
+      💡 <strong>Nem biztos?</strong> Hívjon minket – <strong><?= $phone ?></strong> – telefonon elmondja a tüneteket, mi megmondjuk megéri-e javítani. Ingyenes tanácsadás.
+    </p>
+  </div>
+</section>
+
+<!-- ÁRAK -->
+<section class="section section-alt" id="arak">
+  <div class="container">
+    <span class="tag tag-fire">Árak 2025</span>
+    <h2 class="sec-title">Bojler Javítás és Csere Árak – Budapest 2025</h2>
+    <p class="sec-sub">Tájékoztató munkadíjak. Telefonon elmondja a tüneteket – mi megmondjuk a várható költséget.</p>
+    <div style="overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow-sm)">
+      <table class="price-table">
+        <thead>
+          <tr><th>Elvégzett munka</th><th>Tájékoztató ár</th><th>Megjegyzés</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="/bojler-javitas-budapest/">Fűtőszál csere</a></td><td class="price-col">12.000–20.000 Ft</td><td class="note-col">+ alkatrész</td></tr>
+          <tr><td><a href="/bojler-javitas-budapest/">Termosztát csere</a></td><td class="price-col">10.000–18.000 Ft</td><td class="note-col">+ alkatrész</td></tr>
+          <tr><td><a href="/bojler-javitas-budapest/">Biztonsági szelep csere</a></td><td class="price-col">8.000–15.000 Ft</td><td class="note-col">+ alkatrész</td></tr>
+          <tr><td><a href="/bojler-javitas-budapest/">Biztonsági hőkapcsoló csere</a></td><td class="price-col">10.000–16.000 Ft</td><td class="note-col">+ alkatrész</td></tr>
+          <tr><td><a href="/bojler-csere-budapest/">Bojler csere (szerelési díj)</a></td><td class="price-col">15.000–35.000 Ft</td><td class="note-col">+ bojler ára</td></tr>
+          <tr><td><a href="/bojler-vizkotelenites-budapest/">Vízkőtelenítés + anódrúd csere</a></td><td class="price-col">12.000–20.000 Ft</td><td class="note-col">+ alkatrész</td></tr>
+          <tr><td><a href="/ariston-bojler-javitas-budapest/">Ariston bojler javítás</a></td><td class="price-col">10.000–28.000 Ft</td><td class="note-col">típustól függ</td></tr>
+          <tr><td><a href="/hajdu-bojler-csere-budapest/">Hajdú bojler csere</a></td><td class="price-col">15.000–35.000 Ft</td><td class="note-col">+ bojler ára</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="price-note">
+      ⚠️ Az árak tájékoztató jellegűek, az anyag/alkatrész külön értendő. Hétvégi és éjszakai kiszállás sürgősségi díjjal.
+      Pontos ajánlat: <strong><a href="<?= $phone_link ?>" style="color:var(--fire)"><?= $phone ?></a></strong> vagy
+      <a href="/ajanlatkeres/" style="color:var(--fire);font-weight:700">online árajánlat →</a>
+    </div>
+  </div>
+</section>
+
+<!-- MIÉRT MINKET (sötét szekció) -->
+<section class="section section-dark">
+  <div class="container">
+    <span class="tag tag-dark">Miért minket?</span>
+    <h2 class="sec-title-white">6 Ok, Amiért Budapesten Minket Hívnak</h2>
+    <p class="sec-sub-white">Nem ígérünk olyat amit nem tudunk tartani – ezeket igen.</p>
+    <div class="reasons-grid">
+      <div class="reason"><div class="reason-num">01</div><h4>⏱ 1–2 Óra Kiszállás</h4><p>Budapest bármely kerületébe – sürgős esetben 1 órán belül megérkezünk.</p></div>
+      <div class="reason"><div class="reason-num">02</div><h4>🏷️ Ariston &amp; Hajdú Szakszerviz</h4><p>Nem általános szerelők – ezekre a márkákra specializálódtunk. Raktáron tartott alkatrészek.</p></div>
+      <div class="reason"><div class="reason-num">03</div><h4>💰 Ár Telefonon, Nem Helyszínen</h4><p>Elmondja a tüneteket – megmondjuk a várható árat. Helyszínen nem drágul meg a munka.</p></div>
+      <div class="reason"><div class="reason-num">04</div><h4>🔒 Törvényes Jótállás</h4><p>Minden javításra és beépített alkatrészre Ptk. szerinti garancia, számlával, írásban.</p></div>
+      <div class="reason"><div class="reason-num">05</div><h4>📞 0-24 Elérhetőség</h4><p>Éjjel, hétvégén, ünnepnapon is. A bojler meghibásodás nem vár munkaidőre.</p></div>
+      <div class="reason"><div class="reason-num">06</div><h4>🧹 Takarosan Dolgozunk</h4><p>Elvégezzük a munkát, összeszedünk mindent és takarítottan hagyjuk el a helyszínt.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOLYAMAT -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="tag tag-fire">Hogyan dolgozunk</span>
+    <h2 class="sec-title">4 Lépés a Meleg Vízhez</h2>
+    <p class="sec-sub">Átlátható folyamat – meglepetés nélkül.</p>
+    <div class="steps-grid">
+      <div class="step"><div class="step-n">1</div><h4>Hívás</h4><p>Leírja a tüneteket, mi megmondjuk a várható árat és a kiszállási időt.</p></div>
+      <div class="step"><div class="step-n">2</div><h4>Kiszállás</h4><p>1–2 órán belül megérkezünk – saját alkatrészkészlettel, felszerelve.</p></div>
+      <div class="step"><div class="step-n">3</div><h4>Diagnózis</h4><p>Helyszíni vizsgálat, pontos árajánlat – az Ön jóváhagyása után kezdünk.</p></div>
+      <div class="step"><div class="step-n">4</div><h4>Javítás + Számla</h4><p>Elvégezzük a munkát, kiállítjuk a számlát, garanciát adunk írásban.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VÉLEMÉNYEK -->
+<section class="section">
+  <div class="container">
+    <span class="tag tag-fire">Ügyfélvélemények</span>
+    <h2 class="sec-title">143 Elégedett Ügyfél – 4.9 Csillag</h2>
+    <p class="sec-sub">Nem mi mondjuk – ők mondják.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Reggel 7-kor nem volt meleg víz. Telefonáltam, délelőtt 10-re új Ariston Lydos működött. Gyors, profi, korrekt ár."</p>
+        <div class="rv-author">
+          <div class="rv-av">HG</div>
+          <div><div class="rv-name">Horváth Gábor</div><div class="rv-loc">Budapest XI. kerület</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"15 éves Hajdú bojleremen vízkőtelenítés és anódrúd csere. Azt mondták megéri még, nem erőltették a cserét. Becsületes szakemberek."</p>
+        <div class="rv-author">
+          <div class="rv-av">SzK</div>
+          <div><div class="rv-name">Szabó Krisztina</div><div class="rv-loc">Budapest II. kerület</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Leverte a biztosítékot a bojler. Telefonon azonnal megmondták mi lehet a baj. Kiszálltak, fűtőszál csere, 2 óra alatt megoldva."</p>
+        <div class="rv-author">
+          <div class="rv-av">MI</div>
+          <div><div class="rv-name">Molnár István</div><div class="rv-loc">Budapest XIV. kerület</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KERÜLETEK -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="tag tag-fire">Területi lefedettség</span>
+    <h2 class="sec-title">Bojler Szerelő Budapest – Minden Kerületbe Kiszállunk</h2>
+    <p class="sec-sub">Válassza ki kerületét a helyi elérhetőségért és kiszállási időért.</p>
+    <div class="districts-grid">
+      <?php for($i=1;$i<=23;$i++): ?>
+      <a href="/bojler-szerelo-<?= $i ?>-kerulet/" class="dist-link">Budapest <?= $i ?>. ker.</a>
+      <?php endfor; ?>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <span class="tag tag-fire">GYIK</span>
+    <h2 class="sec-title">Gyakran Ismételt Kérdések – Bojler Szerelés</h2>
+    <p class="sec-sub">AI-ra optimalizált válaszok – ezeket kérdezik leggyakrabban.</p>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Miért nem melegít a villanybojler? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">A villanybojler leggyakrabban azért nem melegít, mert <strong>elégett a fűtőszál</strong> (ez a legelterjedtebb hiba, kb. 10–15 évente fordul elő), elromlott a <strong>termosztát</strong> (nem érzékeli a hőmérsékletet), vagy leoldott a <strong>biztonsági hőkapcsoló</strong> túlhevülés miatt. Vastag vízkőréteg esetén lassan melegít ugyan, de egyáltalán nem melegítő bojler szinte mindig a fűtőszál vagy a termosztát hibája.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Mennyibe kerül a bojler javítás Budapesten 2025-ben? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">A bojler javítás munkadíja Budapesten <strong>10.000–28.000 Ft</strong> között mozog 2025-ben, az alkatrész árától függően. Fűtőszál csere: 12.000–20.000 Ft + alkatrész. Termosztát csere: 10.000–18.000 Ft + alkatrész. Biztonsági szelep: 8.000–15.000 Ft + alkatrész. Telefonon pontosabb árajánlatot adunk.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Miért veri le a bojler a biztosítékot? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Ha a villanybojler leveri a biztosítékot, az szinte biztosan <strong>sérült fűtőszál</strong> miatt van. A fűtőszál szigetelése megrepedezik, víz hatására földre szivárog az áram – ez védelmi kioldást okoz. <strong>Ne használja tovább a bojlert</strong> – elektromos balesetet okozhat. Hívjon szerelőt azonnal: <?= $phone ?>.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Mikor kell bojlert cserélni javítás helyett? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Bojler cserét javasoljuk ha: a készülék <strong>12 évnél idősebb</strong>, <strong>rozsdás vizet</strong> ad ki (a tartály belülről korrodál), <strong>szivárog a tartály</strong>, vagy az éves javítási költség meghaladja az új bojler árának <strong>40%-át</strong>. 7 évnél fiatalabb, ép tartályú bojlernél általában megéri javítani.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Mennyi ideig tart egy bojler csere Budapesten? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Egy villanybojler csere általában <strong>2–3 órát</strong> vesz igénybe. Ez tartalmazza a régi bojler leszedését és elszállítását, az új felszerelését, bekötését és a rendszer tömörségi próbáját. Nagy kapacitású (120+ literes) bojler esetén 3–4 óra.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Milyen garancia van a bojler javításra? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Minden elvégzett munkánkra a <strong>Ptk. szerinti jótállást és szavatosságot</strong> biztosítjuk, számlás teljesítéssel, írásban. Az általunk beépített alkatrészekre gyártói garancia vonatkozik.</div>
+      </div>
+      <p style="margin-top:1rem"><a href="/blog/" style="color:var(--fire);font-weight:700">Tovább a blogra – bojler tippek és útmutatók →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Nem Melegít a Bojler? Hívjon Most!</h2>
+    <p>0-24, hétvégén is – 1–2 óra kiszállás Budapest minden kerületébe. Ingyenes helyszíni diagnózis.</p>
+    <div class="cta-btns">
+      <a href="<?= $phone_link ?>" class="btn-cta-main">📞 <?= $phone ?></a>
+      <a href="<?= $wa_link ?>" class="btn-cta-sec" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="/ajanlatkeres/" class="btn-cta-sec">📋 Online árajánlat</a>
+    </div>
+  </div>
+</div>
+
+<!-- KAPCSOLAT -->
+<section class="section" id="kapcsolat">
+  <div class="container">
+    <span class="tag tag-fire">Kapcsolat</span>
+    <h2 class="sec-title">Visszahívást Kér?</h2>
+    <p class="sec-sub">Hagyja meg számát – visszahívjuk, általában 15 percen belül.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Elérhetőségeink</h3>
+        <div class="cc-item"><div class="cc-ico">📞</div><div><span class="cc-lbl">Telefon / WhatsApp / Viber</span><div class="cc-val"><a href="<?= $phone_link ?>"><?= $phone ?></a></div></div></div>
+        <div class="cc-item"><div class="cc-ico">🕐</div><div><span class="cc-lbl">Nyitvatartás</span><div class="cc-val">0–24 · Hétfő–Vasárnap</div></div></div>
+        <div class="cc-item"><div class="cc-ico">✉️</div><div><span class="cc-lbl">E-mail</span><div class="cc-val"><a href="mailto:<?= $email ?>"><?= $email ?></a></div></div></div>
+        <div class="cc-item"><div class="cc-ico">📍</div><div><span class="cc-lbl">Cím</span><div class="cc-val">1191 Budapest, Hamvas u. 7-9.</div></div></div>
+        <div class="contact-btns">
+          <a href="<?= $wa_link ?>" target="_blank" rel="noopener" class="cbtn cbtn-wa">💬 WhatsApp</a>
+          <a href="<?= $viber_link ?>" class="cbtn cbtn-vb">📲 Viber</a>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>Visszahívás Kérése</h3>
+        <div id="fs"><div class="fi">✅</div><h4 style="color:var(--green)">Köszönjük! Hamarosan hívjük.</h4><p style="font-size:.88rem">Sürgős: <a href="<?= $phone_link ?>" style="color:var(--fire);font-weight:700"><?= $phone ?></a></p></div>
+        <form id="cbform" onsubmit="submitCb(event)">
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="fg"><label for="nev">Neve *</label><input type="text" id="nev" name="name" placeholder="pl. Kovács János" required></div>
+          <div class="fg"><label for="tel">Telefonszám *</label><input type="tel" id="tel" name="phone" placeholder="pl. 06 30 123 4567" required></div>
+          <div class="fg"><label for="leiras">Bojler tünete (opcionális)</label><textarea id="leiras" name="message" placeholder="pl. Nem melegít, reggel óta nincs meleg víz..."></textarea></div>
+          <button type="submit" class="btn-submit">📨 Visszahívás kérése</button>
+          <p class="form-note">* Kötelező. Adatait bizalmasan kezeljük. <a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo">🔥 Provi Domus Kft.</div>
+      <p>Bojler szerelő Budapest területén 2011 óta. Villanybojler javítás, csere, vízkőtelenítés – Ariston &amp; Hajdú szakszerviz, 0-24, garanciával.</p>
+      <div class="f-contact-row">📞 <a href="<?= $phone_link ?>"><?= $phone ?></a> &nbsp;(0–24)</div>
+      <div class="f-contact-row">✉️ <a href="mailto:<?= $email ?>"><?= $email ?></a></div>
+      <div class="f-contact-row">📍 1191 Budapest, Hamvas utca 7-9.</div>
+    </div>
+    <div>
+      <div class="f-heading">Szolgáltatások</div>
+      <ul class="f-links">
+        <li><a href="/bojler-javitas-budapest/">Bojler javítás</a></li>
+        <li><a href="/bojler-csere-budapest/">Bojler csere</a></li>
+        <li><a href="/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a></li>
+        <li><a href="/ariston-bojler-javitas-budapest/">Ariston szerviz</a></li>
+        <li><a href="/hajdu-bojler-csere-budapest/">Hajdú csere</a></li>
+        <li><a href="/ariston-lydos-bojler-bemutato/">Ariston Lydos</a></li>
+        <li><a href="/ariston-velis-bojler-bemutato/">Ariston Velis</a></li>
+        <li><a href="/ariston-pro1-eco-bojler-bemutato/">Ariston Pro1 Eco</a></li>
+        <li><a href="/hajdu-aquastic-bojler-bemutato/">Hajdú Aquastic</a></li>
+        <li><a href="/hajdu-z-smart-bojler-bemutato/">Hajdú Z Smart</a></li>
+        <li><a href="/hajdu-ideallo-bojler-bemutato/">Hajdú Ideallo</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-heading">Budapest kerületek</div>
+      <ul class="f-links">
+        <?php for($i=1;$i<=12;$i++): ?>
+        <li><a href="/bojler-szerelo-<?= $i ?>-kerulet/">Budapest <?= $i ?>. kerület</a></li>
+        <?php endfor; ?>
+      </ul>
+    </div>
+    <div>
+      <div class="f-heading">Kerületek (folyt.)</div>
+      <ul class="f-links">
+        <?php for($i=13;$i<=23;$i++): ?>
+        <li><a href="/bojler-szerelo-<?= $i ?>-kerulet/">Budapest <?= $i ?>. kerület</a></li>
+        <?php endfor; ?>
+      </ul>
+      <div class="f-heading" style="margin-top:1.5rem">Információk</div>
+      <ul class="f-links">
+        <li><a href="/ajanlatkeres/">Árajánlat kérés</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/kapcsolat/">Kapcsolat</a></li>
+        <li><a href="/impresszum/">Impresszum</a></li>
+        <li><a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a></li>
+        <li><a href="/altalanos-szerzodesi-feltetelek-aszf/">ÁSZF</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Provi Domus Kft. – Bojler Szerelő Budapest</span>
+    <div class="footer-bottom-links">
+      <a href="/impresszum/">Impresszum</a>
+      <a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a>
+      <a href="/altalanos-szerzodesi-feltetelek-aszf/">ÁSZF</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LEBEGŐ GOMBOK -->
+<a href="<?= $wa_link ?>" class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<a href="<?= $phone_link ?>" class="float-call" aria-label="Hívás">📞 <?= $phone ?></a>
+
+<script>
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  var open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!open){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+function submitCb(e){
+  e.preventDefault();
+  var f=document.getElementById('cbform');
+  if(f.querySelector('[name="website"]').value)return;
+  fetch('/kapcsolat/form-handler.php',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name:f.querySelector('[name="name"]').value,phone:f.querySelector('[name="phone"]').value,message:f.querySelector('[name="message"]').value})
+  }).finally(function(){f.style.display='none';document.getElementById('fs').style.display='block'});
+}
+(function(){
+  var h=document.querySelector('.site-header');
+  window.addEventListener('scroll',function(){h.style.boxShadow=scrollY>30?'0 3px 20px rgba(0,0,0,.5)':'0 2px 16px rgba(0,0,0,.4)';},{passive:true});
+})();
+</script>
+</body>
+</html>
+
