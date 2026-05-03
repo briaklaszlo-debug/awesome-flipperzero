@@ -412,3 +412,749 @@ $keruletek = [
 // Aktuális kerület adatai
 $k = $keruletek[$kid];
 $roman_szam = ['','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII'];
+?><!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bojler Szerelő Budapest <?= $k['roman'] ?> Kerület – <?= $k['reszek'] ?> | Provi Domus Kft.</title>
+<meta name="description" content="Bojler szerelő Budapest <?= $k['nev'] ?>-ban – <?= $k['reszek'] ?>. Villanybojler javítás, csere, vízkőtelenítés 1-2 óra kiszállás, 0-24, garancia. <?= $phone ?>">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="<?= $base ?>/bojler-szerelo-<?= $kid ?>-kerulet/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bojler Szerelő Budapest <?= $k['roman'] ?>. Kerület – <?= $k['reszek'] ?>">
+<meta property="og:description" content="Bojler javítás, csere <?= $k['nev'] ?>-ban – 1-2 óra kiszállás, 0-24. <?= $phone ?>">
+<meta property="og:locale" content="hu_HU">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Plumber","HVACBusiness"],
+      "name": "Provi Domus Kft. – Bojler Szerelő Budapest <?= $k['roman'] ?>. Kerület",
+      "url": "<?= $base ?>/bojler-szerelo-<?= $kid ?>-kerulet/",
+      "telephone": "+36701644000",
+      "email": "<?= $email ?>",
+      "address": {"@type":"PostalAddress","addressLocality":"Budapest","addressCountry":"HU"},
+      "areaServed": "Budapest <?= $k['nev'] ?> – <?= $k['reszek'] ?>",
+      "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},
+      "priceRange": "10000-35000 HUF",
+      "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"143","bestRating":"5"},
+      "hasOfferCatalog": {"@type":"OfferCatalog","name":"Bojler Szerelés <?= $k['nev'] ?>","itemListElement":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bojler javítás Budapest <?= $k['roman'] ?>. kerület"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"10000","maxPrice":"28000","priceCurrency":"HUF"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bojler csere Budapest <?= $k['roman'] ?>. kerület"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"15000","maxPrice":"35000","priceCurrency":"HUF"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vízkőtelenítés Budapest <?= $k['roman'] ?>. kerület"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"12000","maxPrice":"20000","priceCurrency":"HUF"}}
+      ]}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"<?= htmlspecialchars($k['faq_q']) ?>","acceptedAnswer":{"@type":"Answer","text":"<?= htmlspecialchars($k['faq_a']) ?>"}},
+        {"@type":"Question","name":"Mennyibe kerül a bojler javítás Budapest <?= $k['roman'] ?>. kerületben?","acceptedAnswer":{"@type":"Answer","text":"A bojler javítás munkadíja Budapest <?= $k['nev'] ?>-ban 10.000–28.000 Ft között mozog, az alkatrész ára külön értendő. Kiszállás: 1-2 óra, 0-24."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Főoldal","item":"<?= $base ?>/"},
+        {"@type":"ListItem","position":2,"name":"Budapest kerületek","item":"<?= $base ?>/"},
+        {"@type":"ListItem","position":3,"name":"<?= $k['nev'] ?>","item":"<?= $base ?>/bojler-szerelo-<?= $kid ?>-kerulet/"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a2e;background:#fff;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;height:auto;display:block}
+:root{
+  --fire:#c62828;--fire-dark:#8e0000;--amber:#f57f17;--amber-bright:#ffab00;
+  --dark:#0f0f1a;--dark-card:#1a1a2e;--green:#2e7d32;--white:#fff;
+  --gray-light:#f5f5f7;--gray:#e8e8ed;--text:#1a1a2e;--text-light:#4a4a5a;
+  --shadow-sm:0 2px 8px rgba(198,40,40,.10);--shadow-md:0 6px 24px rgba(198,40,40,.16);
+  --r:12px;--rs:8px;--t:all .22s ease;
+}
+h1{font-size:clamp(1.75rem,4vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.02em}
+h2{font-size:clamp(1.35rem,3vw,2rem);font-weight:800;line-height:1.2;color:var(--text)}
+h3{font-size:clamp(1rem,2vw,1.25rem);font-weight:700;color:var(--text)}
+h4{font-size:.98rem;font-weight:700;color:var(--text)}
+p{color:var(--text-light);line-height:1.7}
+
+/* ALERT BAR */
+.ab{background:var(--fire-dark);color:#fff;text-align:center;padding:.45rem 1rem;font-size:.83rem;font-weight:600}
+.ab a{color:#ffcc02;font-weight:800}
+
+/* HEADER */
+.sh{position:sticky;top:0;z-index:1000;background:var(--dark);box-shadow:0 2px 16px rgba(0,0,0,.4)}
+.hi{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.5rem;gap:1rem}
+.logo a{display:flex;align-items:center;gap:.6rem;color:#fff;font-size:1.05rem;font-weight:900;white-space:nowrap}
+.lm{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--fire),var(--amber));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.ls{font-size:.65rem;font-weight:400;color:rgba(255,255,255,.55);display:block;margin-top:1px}
+.nav{display:flex;gap:.1rem;flex-wrap:wrap;align-items:center}
+.nav a{color:rgba(255,255,255,.75);font-size:.82rem;font-weight:500;padding:.38rem .6rem;border-radius:6px;transition:var(--t);white-space:nowrap}
+.nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+.nav a.active{color:#ffcc02}
+.hcta{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
+.bth{background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;padding:.52rem 1.05rem;border-radius:var(--rs);font-weight:800;font-size:.88rem;white-space:nowrap;box-shadow:0 3px 12px rgba(198,40,40,.4);transition:var(--t)}
+.bth:hover{transform:translateY(-1px);box-shadow:0 5px 18px rgba(198,40,40,.5)}
+.bth small{display:block;font-size:.62rem;font-weight:400;opacity:.8}
+.nt{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem}
+.nt span{width:24px;height:2px;background:#fff;border-radius:2px}
+#nc{display:none}
+
+/* BREADCRUMB */
+.bc{background:rgba(255,255,255,.06);padding:.5rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.bci{max-width:1200px;margin:0 auto;display:flex;gap:.4rem;align-items:center;font-size:.78rem;color:rgba(255,255,255,.55);flex-wrap:wrap}
+.bci a{color:rgba(255,255,255,.55);transition:var(--t)}
+.bci a:hover{color:#fff}
+.bci span{color:rgba(255,255,255,.3)}
+
+/* HERO */
+.hero{background:linear-gradient(145deg,var(--fire-dark) 0%,var(--fire) 55%,#d84315 100%);padding:3.5rem 1.5rem 3rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:50px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 50'%3E%3Cpath fill='%23f5f5f7' d='M0,50 C360,0 1080,0 1440,50 L1440,50 L0,50Z'/%3E%3C/svg%3E") bottom/cover;pointer-events:none}
+.hw{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.hg{display:grid;grid-template-columns:1fr 260px;gap:2rem;align-items:start}
+.hbadge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(0,0,0,.3);color:#ffcc02;padding:.3rem .85rem;border-radius:20px;font-size:.78rem;font-weight:800;margin-bottom:.85rem;border:1px solid rgba(255,204,2,.3);text-transform:uppercase;letter-spacing:.04em}
+.hero h1{margin-bottom:.75rem;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.hero h1 em{font-style:normal;color:#ffcc02}
+.hd{color:rgba(255,255,255,.9);font-size:1.05rem;margin-bottom:1.25rem;max-width:560px;line-height:1.65}
+.hch{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.75rem}
+.hci{display:flex;align-items:center;gap:.35rem;color:rgba(255,255,255,.92);font-size:.8rem;font-weight:600;background:rgba(0,0,0,.22);padding:.28rem .7rem;border-radius:20px;border:1px solid rgba(255,255,255,.14)}
+.hb{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.bpc{background:#fff;color:var(--fire);padding:.85rem 1.75rem;border-radius:var(--rs);font-weight:900;font-size:1.05rem;box-shadow:0 6px 24px rgba(0,0,0,.25);transition:var(--t);display:inline-flex;align-items:center;gap:.45rem}
+.bpc:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,0,0,.35)}
+.bws{background:rgba(255,255,255,.12);color:#fff;padding:.85rem 1.35rem;border-radius:var(--rs);font-weight:700;border:2px solid rgba(255,255,255,.3);transition:var(--t);display:inline-flex;align-items:center;gap:.45rem}
+.bws:hover{background:rgba(255,255,255,.2)}
+.hs{display:flex;flex-wrap:wrap;gap:1rem}
+.sig{display:flex;align-items:center;gap:.35rem;color:rgba(255,255,255,.82);font-size:.8rem;font-weight:500}
+
+/* Hero kártya */
+.hcard{background:var(--dark);border-radius:var(--r);padding:1.35rem;border:1px solid rgba(255,255,255,.08);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+.hu{text-align:center;background:linear-gradient(135deg,var(--fire-dark),var(--fire));border-radius:var(--rs);padding:.75rem;margin-bottom:.85rem}
+.hu .ul{font-size:.68rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.08em;display:block}
+.hu .up{font-size:1.3rem;font-weight:900;color:#fff;display:block;margin:.2rem 0}
+.hu .us{font-size:.72rem;color:rgba(255,255,255,.72)}
+.bcr{display:block;width:100%;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;text-align:center;padding:.7rem;border-radius:var(--rs);font-weight:800;font-size:.92rem;margin-bottom:.55rem;transition:var(--t)}
+.bcr:hover{filter:brightness(1.1)}
+.bwg{display:block;width:100%;background:#25d366;color:#fff;text-align:center;padding:.62rem;border-radius:var(--rs);font-weight:700;font-size:.86rem;margin-bottom:.45rem;transition:var(--t)}
+.bwg:hover{background:#1ebe5d}
+.hp{margin-top:.8rem}
+.hp p{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.45rem}
+.hp li{font-size:.8rem;color:rgba(255,255,255,.78);padding:.28rem 0;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:.35rem}
+.hp li:last-child{border-bottom:none}
+
+/* STATS */
+.sb{background:var(--dark);padding:1.35rem}
+.si{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+.st{text-align:center}
+.sn{font-size:1.85rem;font-weight:900;color:var(--amber);line-height:1}
+.sl{font-size:.74rem;color:rgba(255,255,255,.55);margin-top:.2rem}
+
+/* SZEKCIÓK */
+.sec{padding:3.5rem 1.5rem}
+.seca{background:var(--gray-light)}
+.secd{background:var(--dark-card)}
+.con{max-width:1200px;margin:0 auto}
+.tag{display:inline-block;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:.22rem .75rem;border-radius:20px;margin-bottom:.6rem}
+.tf{color:var(--fire);background:rgba(198,40,40,.1)}
+.td{color:var(--amber);background:rgba(245,127,23,.15)}
+.stit{margin-bottom:.55rem}
+.ssub{color:var(--text-light);font-size:.98rem;max-width:620px;margin-bottom:2.25rem}
+.stit-w{color:#fff;margin-bottom:.55rem}
+.ssub-w{color:rgba(255,255,255,.65);font-size:.98rem;max-width:620px;margin-bottom:2.25rem}
+
+/* AI SNIPPET */
+.aibox{background:linear-gradient(135deg,#0f0f1a,#1a1a2e);border-radius:var(--r);padding:1.6rem 1.85rem;border-left:4px solid var(--amber);box-shadow:var(--shadow-md);margin-bottom:2.25rem}
+.ail{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.7rem;background:rgba(245,127,23,.15);padding:.2rem .65rem;border-radius:20px}
+.aibox h3{color:#fff;margin-bottom:.7rem;font-size:1.05rem}
+.aibox p{color:rgba(255,255,255,.75);font-size:.9rem;line-height:1.75;margin-bottom:.4rem}
+.aibox p:last-child{margin-bottom:0}
+
+/* SZOLGÁLTATÁS KÁRTYÁK */
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.1rem}
+.sc{background:#fff;border-radius:var(--r);border:1px solid var(--gray);padding:1.5rem;transition:var(--t);position:relative;overflow:hidden}
+.sc::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--fire),var(--amber));transform:scaleX(0);transform-origin:left;transition:var(--t)}
+.sc:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:transparent}
+.sc:hover::after{transform:scaleX(1)}
+.sci{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,rgba(198,40,40,.07),rgba(245,127,23,.1));display:flex;align-items:center;justify-content:center;font-size:1.45rem;margin-bottom:.9rem;transition:var(--t)}
+.sc:hover .sci{background:linear-gradient(135deg,rgba(198,40,40,.14),rgba(245,127,23,.18))}
+.scp{display:inline-block;font-size:.76rem;font-weight:800;color:var(--fire);background:rgba(198,40,40,.08);padding:.18rem .6rem;border-radius:20px;margin-bottom:.7rem}
+.sc h3{margin-bottom:.45rem;font-size:1rem}
+.sc p{font-size:.86rem;margin-bottom:.85rem}
+.scl li{font-size:.81rem;color:var(--text-light);padding:.18rem 0;display:flex;align-items:center;gap:.35rem}
+.scl li::before{content:'✓';color:var(--green);font-weight:700;font-size:.78rem;flex-shrink:0}
+.sclink{display:inline-flex;align-items:center;gap:.3rem;margin-top:.85rem;font-size:.83rem;font-weight:700;color:var(--fire);transition:var(--t)}
+.sclink:hover{gap:.55rem}
+
+/* ÁRAK */
+.pt{width:100%;border-collapse:collapse;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
+.pt thead tr{background:linear-gradient(90deg,var(--fire-dark),var(--fire));color:#fff}
+.pt thead th{padding:.9rem 1.2rem;text-align:left;font-size:.86rem;font-weight:700}
+.pt tbody tr{border-bottom:1px solid var(--gray);transition:var(--t)}
+.pt tbody tr:hover{background:#fff5f5}
+.pt tbody tr:last-child{border-bottom:none}
+.pt td{padding:.8rem 1.2rem;font-size:.88rem}
+.pt td:first-child{font-weight:600}
+.prc{font-weight:800;color:var(--fire)}
+.ntc{font-size:.78rem;color:var(--text-light)}
+.pnote{margin-top:.9rem;font-size:.82rem;color:var(--text-light);padding:.7rem .95rem;background:var(--gray-light);border-radius:var(--rs);border-left:3px solid var(--amber)}
+
+/* MIÉRT MINKET */
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.1rem}
+.rc{background:rgba(255,255,255,.05);border-radius:var(--r);padding:1.35rem;border:1px solid rgba(255,255,255,.08);transition:var(--t)}
+.rc:hover{background:rgba(255,255,255,.09);transform:translateY(-2px)}
+.rn{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.95rem;margin-bottom:.9rem}
+.rc h4{color:#fff;margin-bottom:.35rem}
+.rc p{color:rgba(255,255,255,.62);font-size:.84rem}
+
+/* FOLYAMAT */
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:1.25rem;position:relative}
+.pg::before{content:'';position:absolute;top:26px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--fire),var(--amber));z-index:0}
+.ps{text-align:center;position:relative;z-index:1;padding:.4rem}
+.pn{width:52px;height:52px;border-radius:50%;margin:0 auto .9rem;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;box-shadow:0 4px 16px rgba(198,40,40,.4)}
+.ps h4{margin-bottom:.3rem;font-size:.92rem}
+.ps p{font-size:.81rem}
+
+/* VÉLEMÉNY */
+.rvg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.1rem}
+.rvc{background:#fff;border-radius:var(--r);padding:1.4rem;border:1px solid var(--gray);box-shadow:var(--shadow-sm);border-top:3px solid var(--fire)}
+.rvs{color:#f9a825;font-size:1.05rem;margin-bottom:.7rem}
+.rvt{font-size:.9rem;font-style:italic;margin-bottom:.95rem;line-height:1.65;color:var(--text)}
+.rva{display:flex;align-items:center;gap:.7rem}
+.rvav{width:38px;height:38px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.86rem}
+.rvn{font-weight:700;font-size:.86rem}
+.rvl{font-size:.74rem;color:var(--text-light)}
+
+/* BELSŐ LINKEK */
+.ilg{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.il{display:inline-block;background:#fff;border:1px solid var(--gray);border-radius:20px;padding:.32rem .8rem;font-size:.8rem;font-weight:600;color:var(--fire);transition:var(--t)}
+.il:hover{background:var(--fire);color:#fff;border-color:var(--fire)}
+
+/* SZOMSZÉD KERÜLETEK */
+.nkg{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.nkl{display:inline-block;background:var(--dark);color:rgba(255,255,255,.8);border-radius:20px;padding:.35rem .85rem;font-size:.8rem;font-weight:600;transition:var(--t);border:1px solid rgba(255,255,255,.12)}
+.nkl:hover{background:var(--fire);color:#fff;border-color:var(--fire)}
+
+/* FAQ */
+.fw{max-width:800px}
+.fi{border:1px solid var(--gray);border-radius:var(--rs);margin-bottom:.55rem;overflow:hidden}
+.fi:hover{border-color:var(--fire)}
+.fq{width:100%;background:none;border:none;cursor:pointer;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;text-align:left;font-size:.92rem;font-weight:700;color:var(--text);gap:.85rem}
+.fqi{width:24px;height:24px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:var(--t)}
+.fa{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding:0 1.2rem;font-size:.88rem;color:var(--text-light)}
+.fi.open .fa{max-height:220px;padding:.7rem 1.2rem 1rem}
+.fi.open .fqi{transform:rotate(45deg)}
+.fi.open{border-color:var(--fire);box-shadow:var(--shadow-sm)}
+
+/* CTA BANNER */
+.ctab{background:linear-gradient(135deg,#0f0f1a 0%,var(--fire-dark) 100%);padding:3rem 1.5rem;text-align:center}
+.ctab h2{color:#fff;margin-bottom:.55rem}
+.ctab p{color:rgba(255,255,255,.72);margin-bottom:1.75rem;font-size:1rem}
+.ctabs{display:flex;justify-content:center;gap:.85rem;flex-wrap:wrap}
+.ctam{background:linear-gradient(135deg,#fff,#fff5f0);color:var(--fire);padding:.9rem 2rem;border-radius:var(--rs);font-weight:900;font-size:1.05rem;transition:var(--t);box-shadow:0 6px 24px rgba(255,255,255,.18)}
+.ctam:hover{transform:translateY(-2px)}
+.ctas{background:transparent;color:#fff;padding:.9rem 1.75rem;border-radius:var(--rs);font-weight:700;border:2px solid rgba(255,255,255,.35);transition:var(--t)}
+.ctas:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* CONTACT */
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;align-items:start}
+.cc{background:linear-gradient(135deg,var(--fire-dark),var(--fire));border-radius:var(--r);padding:1.75rem;color:#fff}
+.cc h3{color:#fff;margin-bottom:1.15rem;font-size:1.3rem}
+.cci{display:flex;align-items:center;gap:.8rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.14)}
+.cci:last-of-type{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.ccic{width:42px;height:42px;border-radius:10px;flex-shrink:0;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+.ccl{font-size:.68rem;opacity:.65;display:block;margin-bottom:.1rem;text-transform:uppercase;letter-spacing:.06em}
+.ccv{font-weight:700;font-size:.95rem}
+.ccv a{color:#fff}
+.ccb{display:flex;gap:.55rem;margin-top:.95rem;flex-wrap:wrap}
+.ccbt{flex:1;min-width:85px;text-align:center;padding:.55rem;border-radius:8px;font-weight:700;font-size:.82rem;transition:var(--t)}
+.wa{background:#25d366;color:#fff}.wa:hover{background:#1ebe5d}
+.vb{background:#7360f2;color:#fff}.vb:hover{background:#5c4de0}
+.fc{background:#fff;border-radius:var(--r);padding:1.75rem;border:1px solid var(--gray);box-shadow:var(--shadow-sm)}
+.fc h3{margin-bottom:1.1rem}
+.fgg{margin-bottom:.9rem}
+.fgg label{display:block;font-size:.8rem;font-weight:700;margin-bottom:.32rem;color:var(--text)}
+.fgg input,.fgg textarea{width:100%;padding:.68rem .88rem;border:1.5px solid var(--gray);border-radius:var(--rs);font-size:.9rem;font-family:inherit;color:var(--text);transition:var(--t)}
+.fgg input:focus,.fgg textarea:focus{outline:none;border-color:var(--fire);box-shadow:0 0 0 3px rgba(198,40,40,.1)}
+.fgg textarea{resize:vertical;min-height:88px}
+.bsub{width:100%;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;padding:.82rem;border-radius:var(--rs);font-weight:800;font-size:.98rem;border:none;cursor:pointer;transition:var(--t)}
+.bsub:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.fn{font-size:.72rem;color:var(--text-light);margin-top:.5rem;text-align:center}
+.fn a{color:var(--fire)}
+#fss{display:none;text-align:center;padding:1.4rem}
+
+/* FOOTER */
+.sf{background:#050510;color:rgba(255,255,255,.62)}
+.fm{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.25rem;padding:2.75rem 1.5rem 1.75rem}
+.fb p{font-size:.85rem;line-height:1.7;margin:.9rem 0 1.1rem;max-width:265px}
+.fcr{display:flex;align-items:center;gap:.5rem;margin-bottom:.45rem;font-size:.82rem}
+.fcr a{color:rgba(255,255,255,.62);transition:var(--t)}.fcr a:hover{color:#fff}
+.fh{color:#fff;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8rem}
+.fl li{margin-bottom:.38rem}
+.fl a{font-size:.82rem;color:rgba(255,255,255,.58);transition:var(--t)}.fl a:hover{color:#fff}
+.fbot{border-top:1px solid rgba(255,255,255,.07);max-width:1200px;margin:0 auto;padding:1.1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;font-size:.74rem;flex-wrap:wrap;gap:.45rem}
+.fbotl{display:flex;gap:1rem;flex-wrap:wrap}
+.fbotl a{color:rgba(255,255,255,.38);transition:var(--t)}.fbotl a:hover{color:rgba(255,255,255,.8)}
+.flogo{color:#fff;font-size:1rem;font-weight:900}
+
+/* FLOATING */
+.fwa{position:fixed;bottom:5.25rem;right:1.25rem;z-index:900;width:50px;height:50px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:3px solid #fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:var(--t)}
+.fwa:hover{transform:scale(1.1)}
+.fph{position:fixed;bottom:1.25rem;right:1.25rem;z-index:900;display:flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--fire),var(--amber));color:#fff;padding:.62rem 1.05rem;border-radius:30px;font-weight:800;font-size:.88rem;border:3px solid #fff;box-shadow:0 4px 20px rgba(198,40,40,.5);transition:var(--t)}
+.fph:hover{filter:brightness(1.1);transform:translateY(-2px)}
+@keyframes fp{0%,100%{box-shadow:0 4px 20px rgba(198,40,40,.5)}50%{box-shadow:0 4px 32px rgba(198,40,40,.8),0 0 0 7px rgba(198,40,40,.12)}}
+.fph{animation:fp 2.5s infinite}
+
+@media(max-width:960px){.hg{grid-template-columns:1fr}.hcard{display:none}.cg{grid-template-columns:1fr}.fm{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--dark);flex-direction:column;padding:.9rem;gap:.18rem;box-shadow:0 8px 32px rgba(0,0,0,.4)}#nc:checked~.hi .nav{display:flex}.nt{display:flex}.si{grid-template-columns:repeat(2,1fr)}.pg::before{display:none}.fm{grid-template-columns:1fr}}
+@media(max-width:480px){.hero{padding:2.25rem 1rem 2rem}.sec{padding:2.5rem 1rem}.si{grid-template-columns:repeat(2,1fr);gap:.45rem}.sn{font-size:1.55rem}}
+</style>
+</head>
+<body>
+
+<!-- SÜRGŐSSÉGI SÁV -->
+<div class="ab">🔥 Bojler hiba Budapest <?= $k['roman'] ?>. kerület? Hívjon most: <a href="<?= $phone_link ?>"><?= $phone ?></a> – 0-24, hétvégén is</div>
+
+<!-- FEJLÉC -->
+<header class="sh">
+  <input type="checkbox" id="nc">
+  <div class="hi">
+    <div class="logo">
+      <a href="/"><div class="lm">🔥</div><div>Provi Domus Kft.<span class="ls">Bojler Szerelő Budapest</span></div></a>
+    </div>
+    <nav class="nav" aria-label="Főnavigáció">
+      <a href="/">Főoldal</a>
+      <a href="/bojler-javitas-budapest/">Javítás</a>
+      <a href="/bojler-csere-budapest/">Csere</a>
+      <a href="/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a>
+      <a href="/ariston-bojler-javitas-budapest/">Ariston</a>
+      <a href="/hajdu-bojler-csere-budapest/">Hajdú</a>
+      <a href="/blog/">Blog</a>
+      <a href="/ajanlatkeres/">Árajánlat</a>
+      <a href="/kapcsolat/">Kapcsolat</a>
+      <a href="/bojler-szerelo-<?= $kid ?>-kerulet/" class="active"><?= $k['roman'] ?>. kerület</a>
+    </nav>
+    <div class="hcta">
+      <a href="<?= $phone_link ?>" class="bth">📞 <?= $phone ?><small>0-24 · Azonnal</small></a>
+      <label for="nc" class="nt" aria-label="Menü"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+  <!-- BREADCRUMB -->
+  <div class="bc" style="background:rgba(0,0,0,.2)">
+    <div class="bci">
+      <a href="/">Főoldal</a><span>›</span>
+      <a href="/">Budapest kerületek</a><span>›</span>
+      <span style="color:rgba(255,255,255,.85)"><?= $k['nev'] ?></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hw">
+    <div class="hg">
+      <div>
+        <div class="hbadge">🚨 Bojler szerelő <?= $k['nev'] ?></div>
+        <h1><?= $k['hero_h1'] ?></h1>
+        <p class="hd"><?= $k['hero_sub'] ?></p>
+        <div class="hch">
+          <span class="hci">✅ 2011 óta megbízható</span>
+          <span class="hci">⚡ 1–2 óra kiszállás</span>
+          <span class="hci">🔒 Törvényes garancia</span>
+          <span class="hci">📋 Számlás munka</span>
+          <span class="hci">🌙 0-24 éjjel-nappal</span>
+          <span class="hci">🏷️ Ariston &amp; Hajdú</span>
+        </div>
+        <div class="hb">
+          <a href="<?= $phone_link ?>" class="bpc">📞 Hívjon most: <?= $phone ?></a>
+          <a href="<?= $wa_link ?>" class="bws" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+        <div class="hs">
+          <span class="sig">🏆 4.9★ – 143 Google vélemény</span>
+          <span class="sig">📍 <?= $k['nev'] ?> – <?= $k['reszek'] ?></span>
+        </div>
+      </div>
+      <div>
+        <div class="hcard">
+          <div class="hu">
+            <span class="ul">🚨 Sürgős kiszállás – <?= $k['roman'] ?>. ker.</span>
+            <a href="<?= $phone_link ?>" class="up"><?= $phone ?></a>
+            <span class="us">0–24 · Hétfő–Vasárnap</span>
+          </div>
+          <a href="<?= $phone_link ?>" class="bcr">📞 Hívás most</a>
+          <a href="<?= $wa_link ?>" class="bwg" target="_blank" rel="noopener">💬 WhatsApp üzenet</a>
+          <div class="hp">
+            <p>Mikor hívjon?</p>
+            <ul>
+              <li>🔴 Nem melegít a bojler</li>
+              <li>🔴 Leveri a biztosítékot</li>
+              <li>🔴 Csöpög, szivárog</li>
+              <li>🔴 Rozsdás víz folyik</li>
+              <li>🟡 Vízkőtelenítés esedékes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="sb">
+  <div class="si">
+    <div class="st"><span class="sn">2011</span><div class="sl">óta működünk</div></div>
+    <div class="st"><span class="sn">1–2h</span><div class="sl">kiszállás <?= $k['roman'] ?>. ker.</div></div>
+    <div class="st"><span class="sn">23</span><div class="sl">Budapest kerület</div></div>
+    <div class="st"><span class="sn">4.9★</span><div class="sl">Google értékelés</div></div>
+  </div>
+</div>
+
+<!-- AI SNIPPET + HELYI PROBLÉMA -->
+<section class="sec seca">
+  <div class="con">
+    <div class="aibox">
+      <div class="ail">🤖 AI & Google kiemelt snippet – <?= $k['nev'] ?></div>
+      <h3>Bojler szerelő Budapest <?= $k['roman'] ?>. kerület – <?= $k['reszek'] ?></h3>
+      <p><?= $k['ai_text'] ?></p>
+      <p><?= $k['jellemzo'] ?></p>
+    </div>
+
+    <!-- HELYI KERÜLETI PROBLÉMA -->
+    <div style="background:#fff;border-radius:var(--r);border:1px solid var(--gray);border-left:4px solid var(--fire);padding:1.5rem;margin-bottom:2.25rem">
+      <h3 style="margin-bottom:.6rem">⚠️ <?= $k['nev'] ?> sajátosságai – amit tudni kell</h3>
+      <p><?= $k['problema'] ?></p>
+    </div>
+
+    <!-- SZOLGÁLTATÁSOK -->
+    <span class="tag tf">Szolgáltatások <?= $k['nev'] ?></span>
+    <h2 class="stit">Bojler Szerelés <?= $k['nev'] ?>-ban – Minden Szolgáltatás</h2>
+    <p class="ssub">Teljes körű villanybojler szerviz <?= $k['reszek'] ?> területén – javítástól cseréig.</p>
+    <div class="sg">
+      <div class="sc">
+        <div class="sci">🔧</div>
+        <div class="scp">10.000 – 28.000 Ft</div>
+        <h3>Bojler Javítás <?= $k['nev'] ?></h3>
+        <p>Nem melegít, leveri a biztosítékot, csöpög? <?= $k['nev'] ?>-ban 1-2 órán belül megérkezünk.</p>
+        <ul class="scl">
+          <li>Fűtőszál csere (leggyakoribb hiba)</li>
+          <li>Termosztát csere és beállítás</li>
+          <li>Biztonsági szelep csere</li>
+          <li>Elektromos hiba diagnosztika</li>
+        </ul>
+        <a href="/bojler-javitas-budapest/" class="sclink">Bojler javítás részletei →</a>
+      </div>
+      <div class="sc">
+        <div class="sci">🔄</div>
+        <div class="scp">15.000 – 35.000 Ft</div>
+        <h3>Bojler Csere <?= $k['nev'] ?></h3>
+        <p>Régi bojler leszedése, elszállítása, új bojler felszerelése <?= $k['reszek'] ?> területén.</p>
+        <ul class="scl">
+          <li>Régi bojler eltávolítása, elszállítása</li>
+          <li>Új bojler felszerelése, bekötése</li>
+          <li>Tömörségi próba, beüzemelés</li>
+          <li>Ariston, Hajdú, Bosch választható</li>
+        </ul>
+        <a href="/bojler-csere-budapest/" class="sclink">Bojler csere részletei →</a>
+      </div>
+      <div class="sc">
+        <div class="sci">💧</div>
+        <div class="scp">12.000 – 20.000 Ft</div>
+        <h3>Vízkőtelenítés <?= $k['nev'] ?></h3>
+        <p>Éves karbantartás: anódrúd csere, biztonsági szelep, vízkőréteg eltávolítás.</p>
+        <ul class="scl">
+          <li>Anódrúd ellenőrzés és csere</li>
+          <li>Biztonsági szelep tesztelés</li>
+          <li>Belső vízkőréteg megszüntetése</li>
+          <li>Élettartam meghosszabbítás 3-5 évvel</li>
+        </ul>
+        <a href="/bojler-vizkotelenites-budapest/" class="sclink">Vízkőtelenítés részletei →</a>
+      </div>
+    </div>
+
+    <!-- BELSŐ LINK JAVASLATOK -->
+    <div style="margin-top:2rem">
+      <h3 style="margin-bottom:.75rem">🔗 Kapcsolódó szolgáltatások és oldalak</h3>
+      <div class="ilg">
+        <a href="/bojler-javitas-budapest/" class="il">Bojler javítás Budapest</a>
+        <a href="/bojler-csere-budapest/" class="il">Bojler csere Budapest</a>
+        <a href="/bojler-vizkotelenites-budapest/" class="il">Vízkőtelenítés</a>
+        <a href="/ariston-bojler-javitas-budapest/" class="il">Ariston szerviz</a>
+        <a href="/ariston-lydos-bojler-bemutato/" class="il">Ariston Lydos</a>
+        <a href="/ariston-velis-bojler-bemutato/" class="il">Ariston Velis</a>
+        <a href="/ariston-pro1-eco-bojler-bemutato/" class="il">Ariston Pro1 Eco</a>
+        <a href="/hajdu-bojler-csere-budapest/" class="il">Hajdú bojler csere</a>
+        <a href="/hajdu-aquastic-bojler-bemutato/" class="il">Hajdú Aquastic</a>
+        <a href="/hajdu-z-smart-bojler-bemutato/" class="il">Hajdú Z Smart</a>
+        <a href="/ajanlatkeres/" class="il">Árajánlat kérés</a>
+        <a href="/blog/" class="il">Blog – bojler tippek</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁRAK -->
+<section class="sec" id="arak">
+  <div class="con">
+    <span class="tag tf">Árak <?= $k['nev'] ?> 2025</span>
+    <h2 class="stit">Bojler Javítás Árak <?= $k['nev'] ?> – 2025</h2>
+    <p class="ssub">Tájékoztató munkadíjak. Telefonon pontosabb árajánlat: <strong><?= $phone ?></strong></p>
+    <div style="overflow-x:auto;border-radius:var(--r);box-shadow:var(--shadow-sm)">
+      <table class="pt">
+        <thead><tr><th>Elvégzett munka</th><th>Tájékoztató ár</th><th>Megjegyzés</th></tr></thead>
+        <tbody>
+          <tr><td>Fűtőszál csere</td><td class="prc">12.000–20.000 Ft</td><td class="ntc">+ alkatrész</td></tr>
+          <tr><td>Termosztát csere</td><td class="prc">10.000–18.000 Ft</td><td class="ntc">+ alkatrész</td></tr>
+          <tr><td>Biztonsági szelep csere</td><td class="prc">8.000–15.000 Ft</td><td class="ntc">+ alkatrész</td></tr>
+          <tr><td>Bojler csere (munkadíj)</td><td class="prc">15.000–35.000 Ft</td><td class="ntc">+ bojler ára</td></tr>
+          <tr><td>Vízkőtelenítés + anódrúd</td><td class="prc">12.000–20.000 Ft</td><td class="ntc">+ alkatrész</td></tr>
+          <tr><td><a href="/ariston-bojler-javitas-budapest/">Ariston javítás</a></td><td class="prc">10.000–28.000 Ft</td><td class="ntc">típustól függ</td></tr>
+          <tr><td><a href="/hajdu-bojler-csere-budapest/">Hajdú csere</a></td><td class="prc">15.000–35.000 Ft</td><td class="ntc">+ bojler ára</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pnote">⚠️ Hétvégi és éjszakai kiszállás sürgősségi díjjal. Pontos ajánlat: <a href="<?= $phone_link ?>" style="color:var(--fire);font-weight:700"><?= $phone ?></a> vagy <a href="/ajanlatkeres/" style="color:var(--fire);font-weight:700">online árajánlat →</a></div>
+  </div>
+</section>
+
+<!-- MIÉRT MINKET (sötét) -->
+<section class="sec secd">
+  <div class="con">
+    <span class="tag td">Miért minket?</span>
+    <h2 class="stit-w">Miért Hívnak Minket <?= $k['nev'] ?>-ban?</h2>
+    <p class="ssub-w">Nem ígérünk olyat amit nem tudunk tartani – ezeket igen.</p>
+    <div class="rg">
+      <div class="rc"><div class="rn">01</div><h4>⏱ 1–2 Óra Kiszállás</h4><p><?= $k['nev'] ?> területén belül – sürgős esetben 1 órán belül megérkezünk.</p></div>
+      <div class="rc"><div class="rn">02</div><h4>🏷️ Ariston &amp; Hajdú Szakszerviz</h4><p>Raktáron tartott alkatrészek – nem kell várni megrendelésre.</p></div>
+      <div class="rc"><div class="rn">03</div><h4>💰 Ár Telefonon, Nem Helyszínen</h4><p>Elmondja a tüneteket – megmondjuk a várható árat. Nincs meglepetés.</p></div>
+      <div class="rc"><div class="rn">04</div><h4>🔒 Törvényes Jótállás</h4><p>Minden munkára Ptk. szerinti garancia, számlával, írásban.</p></div>
+      <div class="rc"><div class="rn">05</div><h4>📞 0-24 Elérhetőség</h4><p>Éjjel, hétvégén, ünnepnapon is – <?= $k['nev'] ?>-ban sem teszünk kivételt.</p></div>
+      <div class="rc"><div class="rn">06</div><h4>🧹 Takarosan Dolgozunk</h4><p>Elvégezzük a munkát és takarítottan hagyjuk el <?= $k['nev'] ?> bármely lakását.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOLYAMAT -->
+<section class="sec seca">
+  <div class="con">
+    <span class="tag tf">Hogyan dolgozunk</span>
+    <h2 class="stit">4 Lépés a Meleg Vízhez <?= $k['nev'] ?>-ban</h2>
+    <p class="ssub">Átlátható folyamat – meglepetés nélkül.</p>
+    <div class="pg">
+      <div class="ps"><div class="pn">1</div><h4>Hívás</h4><p>Elmondja a tüneteket, mi megmondjuk a várható árat és az érkezési időt.</p></div>
+      <div class="ps"><div class="pn">2</div><h4>Kiszállás</h4><p>1–2 óra – <?= $k['nev'] ?> bármely pontjára, alkatrészkészlettel.</p></div>
+      <div class="ps"><div class="pn">3</div><h4>Diagnózis</h4><p>Helyszíni vizsgálat, pontos ár – az Ön jóváhagyása után kezdünk.</p></div>
+      <div class="ps"><div class="pn">4</div><h4>Javítás + Számla</h4><p>Elvégezzük a munkát, kiállítjuk a számlát, garanciát adunk írásban.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VÉLEMÉNY -->
+<section class="sec">
+  <div class="con">
+    <span class="tag tf">Ügyfélvélemény</span>
+    <h2 class="stit">Mit Mondanak <?= $k['nev'] ?> Lakói?</h2>
+    <div class="rvg">
+      <div class="rvc">
+        <div class="rvs">★★★★★</div>
+        <p class="rvt">"<?= $k['testimonial_szoveg'] ?>"</p>
+        <div class="rva">
+          <div class="rvav"><?= strtoupper(substr($k['testimonial_nev'],0,2)) ?></div>
+          <div><div class="rvn"><?= $k['testimonial_nev'] ?></div><div class="rvl"><?= $k['testimonial_ker'] ?></div></div>
+        </div>
+      </div>
+      <div class="rvc">
+        <div class="rvs">★★★★★</div>
+        <p class="rvt">"Reggel fél 8-kor hívtam, hogy nem melegít a bojler. 10-re kiszálltak <?= $k['nev'] ?>-ba, fűtőszál csere, 2 óra alatt meleg víz. Korrekt ár, garancia papírral."</p>
+        <div class="rva">
+          <div class="rvav">GP</div>
+          <div><div class="rvn">Google értékelés</div><div class="rvl"><?= $k['nev'] ?> – 5 csillag</div></div>
+        </div>
+      </div>
+      <div class="rvc">
+        <div class="rvs">★★★★★</div>
+        <p class="rvt">"Telefonon már megmondták mi lehet a gond és kb. mennyibe kerül. <?= $k['nev'] ?>-ba pontosan kiszálltak, precízen dolgoztak. Ajánlom mindenkinek."</p>
+        <div class="rva">
+          <div class="rvav">GR</div>
+          <div><div class="rvn">Google értékelés</div><div class="rvl"><?= $k['nev'] ?> – 5 csillag</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec seca">
+  <div class="con">
+    <span class="tag tf">GYIK – <?= $k['nev'] ?></span>
+    <h2 class="stit">Gyakran Ismételt Kérdések – Bojler Szerelés <?= $k['nev'] ?></h2>
+    <div class="fw">
+      <div class="fi">
+        <button class="fq" onclick="tF(this)" aria-expanded="false"><?= $k['faq_q'] ?><span class="fqi">+</span></button>
+        <div class="fa"><?= $k['faq_a'] ?></div>
+      </div>
+      <div class="fi">
+        <button class="fq" onclick="tF(this)" aria-expanded="false">Mennyibe kerül a bojler javítás <?= $k['nev'] ?>-ban 2025-ben?<span class="fqi">+</span></button>
+        <div class="fa">A bojler javítás munkadíja <?= $k['nev'] ?>-ban <strong>10.000–28.000 Ft</strong> között mozog 2025-ben, az alkatrész külön értendő. Fűtőszál csere: 12.000–20.000 Ft. Termosztát csere: 10.000–18.000 Ft. Telefonon pontosabb árajánlatot adunk: <?= $phone ?>.</div>
+      </div>
+      <div class="fi">
+        <button class="fq" onclick="tF(this)" aria-expanded="false">Mennyi idő alatt ér ki bojler szerelő <?= $k['nev'] ?>-ba?<span class="fqi">+</span></button>
+        <div class="fa"><?= $k['nev'] ?> területére – <?= $k['reszek'] ?> – <strong>1–2 órán belül</strong> kiszállunk, 0-24-ben, hétvégén és ünnepnapokon is. Sürgős esetben az 1 óra garantált.</div>
+      </div>
+      <div class="fi">
+        <button class="fq" onclick="tF(this)" aria-expanded="false">Miért nem melegít a villanybojler <?= $k['nev'] ?>-ban?<span class="fqi">+</span></button>
+        <div class="fa">A nem melegítő bojler leggyakoribb okai: <strong>elégett fűtőszál</strong>, elromlott termosztát, vagy leoldott biztonsági hőkapcsoló. <?= $k['nev'] ?>-ban ezeket a hibákat kiszállás nélkül is meg tudjuk becsülni – írja le a tünetet és felhívjuk.</div>
+      </div>
+      <div class="fi">
+        <button class="fq" onclick="tF(this)" aria-expanded="false">Van garancia a bojler javításra <?= $k['nev'] ?>-ban?<span class="fqi">+</span></button>
+        <div class="fa">Igen, minden <?= $k['nev'] ?>-ban elvégzett munkánkra <strong>Ptk. szerinti jótállást</strong> biztosítunk, számlás teljesítéssel, írásban. A beépített alkatrészekre gyártói garancia vonatkozik.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SZOMSZÉD KERÜLETEK -->
+<section class="sec secd">
+  <div class="con">
+    <span class="tag td">Budapest kerületek</span>
+    <h2 class="stit-w">Szomszéd Kerületek – Szintén Kiszállunk</h2>
+    <p class="ssub-w"><?= $k['nev'] ?> mellett az összes szomszéd kerületbe is 1-2 óra alatt kiszállunk.</p>
+    <div class="nkg">
+      <?php foreach($k['szomszed'] as $s): ?>
+      <a href="/bojler-szerelo-<?= $s ?>-kerulet/" class="nkl">Budapest <?= $roman_szam[$s] ?>. kerület →</a>
+      <?php endforeach; ?>
+      <a href="/" class="nkl" style="color:var(--amber);border-color:rgba(245,127,23,.3)">Összes kerület →</a>
+    </div>
+    <h3 style="color:#fff;margin-top:2rem;margin-bottom:.85rem">Budapest összes kerülete</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:.45rem">
+      <?php for($i=1;$i<=23;$i++): ?>
+      <a href="/bojler-szerelo-<?= $i ?>-kerulet/" style="display:block;background:<?= $i==$kid?'var(--fire)':'rgba(255,255,255,.05)' ?>;border:1px solid <?= $i==$kid?'var(--fire)':'rgba(255,255,255,.1)' ?>;border-radius:var(--rs);padding:.5rem .65rem;font-size:.78rem;font-weight:600;color:<?= $i==$kid?'#fff':'rgba(255,255,255,.75)' ?>;text-align:center;transition:var(--t)" onmouseover="this.style.background='var(--fire)';this.style.color='#fff'" onmouseout="this.style.background='<?= $i==$kid?'var(--fire)':'rgba(255,255,255,.05)' ?>'; this.style.color='<?= $i==$kid?'#fff':'rgba(255,255,255,.75)' ?>'">Budapest <?= $roman_szam[$i] ?>. ker.</a>
+      <?php endfor; ?>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="ctab">
+  <div class="con">
+    <h2>Bojler Hiba <?= $k['nev'] ?>-ban? Hívjon Most!</h2>
+    <p>0-24, hétvégén is – 1–2 óra kiszállás <?= $k['reszek'] ?> területére. Ingyenes helyszíni diagnózis.</p>
+    <div class="ctabs">
+      <a href="<?= $phone_link ?>" class="ctam">📞 <?= $phone ?></a>
+      <a href="<?= $wa_link ?>" class="ctas" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="/ajanlatkeres/" class="ctas">📋 Online árajánlat</a>
+    </div>
+  </div>
+</div>
+
+<!-- KAPCSOLAT -->
+<section class="sec" id="kapcsolat">
+  <div class="con">
+    <span class="tag tf">Kapcsolat</span>
+    <h2 class="stit">Visszahívást Kér <?= $k['nev'] ?>-ból?</h2>
+    <p class="ssub">Hagyja meg számát – visszahívjuk, általában 15 percen belül.</p>
+    <div class="cg">
+      <div class="cc">
+        <h3>Elérhetőségeink</h3>
+        <div class="cci"><div class="ccic">📞</div><div><span class="ccl">Telefon / WhatsApp / Viber</span><div class="ccv"><a href="<?= $phone_link ?>"><?= $phone ?></a></div></div></div>
+        <div class="cci"><div class="ccic">🕐</div><div><span class="ccl">Nyitvatartás</span><div class="ccv">0–24 · Hétfő–Vasárnap</div></div></div>
+        <div class="cci"><div class="ccic">✉️</div><div><span class="ccl">E-mail</span><div class="ccv"><a href="mailto:<?= $email ?>"><?= $email ?></a></div></div></div>
+        <div class="cci"><div class="ccic">📍</div><div><span class="ccl">Kiszállás</span><div class="ccv"><?= $k['nev'] ?> – <?= $k['reszek'] ?></div></div></div>
+        <div class="ccb">
+          <a href="<?= $wa_link ?>" target="_blank" rel="noopener" class="ccbt wa">💬 WhatsApp</a>
+          <a href="<?= $viber_link ?>" class="ccbt vb">📲 Viber</a>
+        </div>
+      </div>
+      <div class="fc">
+        <h3>Visszahívás – <?= $k['nev'] ?></h3>
+        <div id="fss"><div style="font-size:2.5rem">✅</div><h4 style="color:var(--green);margin:.4rem 0">Köszönjük! Hamarosan hívjük.</h4><p style="font-size:.86rem">Sürgős: <a href="<?= $phone_link ?>" style="color:var(--fire);font-weight:700"><?= $phone ?></a></p></div>
+        <form id="cbf" onsubmit="sCb(event)">
+          <input type="text" name="w" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="kerulet" value="<?= $kid ?>">
+          <div class="fgg"><label>Neve *</label><input type="text" name="name" placeholder="pl. Kovács János" required></div>
+          <div class="fgg"><label>Telefonszám *</label><input type="tel" name="phone" placeholder="pl. 06 30 123 4567" required></div>
+          <div class="fgg"><label>Bojler tünete (opcionális)</label><textarea name="message" placeholder="pl. Nem melegít, reggel óta nincs meleg víz..."></textarea></div>
+          <button type="submit" class="bsub">📨 Visszahívás kérése – <?= $k['roman'] ?>. kerület</button>
+          <p class="fn">* Kötelező. <a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sf">
+  <div class="fm">
+    <div class="fb">
+      <div class="flogo">🔥 Provi Domus Kft.</div>
+      <p>Bojler szerelő Budapest <?= $k['nev'] ?>-ban – <?= $k['reszek'] ?>. Villanybojler javítás, csere, vízkőtelenítés 0-24, garanciával, 2011 óta.</p>
+      <div class="fcr">📞 <a href="<?= $phone_link ?>"><?= $phone ?></a> &nbsp;(0–24)</div>
+      <div class="fcr">✉️ <a href="mailto:<?= $email ?>"><?= $email ?></a></div>
+      <div class="fcr">📍 1191 Budapest, Hamvas utca 7-9.</div>
+    </div>
+    <div>
+      <div class="fh">Szolgáltatások</div>
+      <ul class="fl">
+        <li><a href="/bojler-javitas-budapest/">Bojler javítás</a></li>
+        <li><a href="/bojler-csere-budapest/">Bojler csere</a></li>
+        <li><a href="/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a></li>
+        <li><a href="/ariston-bojler-javitas-budapest/">Ariston szerviz</a></li>
+        <li><a href="/ariston-lydos-bojler-bemutato/">Ariston Lydos</a></li>
+        <li><a href="/ariston-velis-bojler-bemutato/">Ariston Velis</a></li>
+        <li><a href="/ariston-pro1-eco-bojler-bemutato/">Ariston Pro1 Eco</a></li>
+        <li><a href="/hajdu-bojler-csere-budapest/">Hajdú csere</a></li>
+        <li><a href="/hajdu-aquastic-bojler-bemutato/">Hajdú Aquastic</a></li>
+        <li><a href="/hajdu-z-smart-bojler-bemutato/">Hajdú Z Smart</a></li>
+        <li><a href="/hajdu-ideallo-bojler-bemutato/">Hajdú Ideallo</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fh">Budapest (I–XII)</div>
+      <ul class="fl">
+        <?php for($i=1;$i<=12;$i++): ?>
+        <li><a href="/bojler-szerelo-<?= $i ?>-kerulet/" <?= $i==$kid?'style="color:var(--amber)"':'' ?>>Budapest <?= $roman_szam[$i] ?>. kerület</a></li>
+        <?php endfor; ?>
+      </ul>
+    </div>
+    <div>
+      <div class="fh">Budapest (XIII–XXIII)</div>
+      <ul class="fl">
+        <?php for($i=13;$i<=23;$i++): ?>
+        <li><a href="/bojler-szerelo-<?= $i ?>-kerulet/" <?= $i==$kid?'style="color:var(--amber)"':'' ?>>Budapest <?= $roman_szam[$i] ?>. kerület</a></li>
+        <?php endfor; ?>
+      </ul>
+      <div class="fh" style="margin-top:1.25rem">Információk</div>
+      <ul class="fl">
+        <li><a href="/ajanlatkeres/">Árajánlat</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/kapcsolat/">Kapcsolat</a></li>
+        <li><a href="/impresszum/">Impresszum</a></li>
+        <li><a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a></li>
+        <li><a href="/altalanos-szerzodesi-feltetelek-aszf/">ÁSZF</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2025 Provi Domus Kft. – Bojler Szerelő Budapest <?= $k['nev'] ?></span>
+    <div class="fbotl">
+      <a href="/impresszum/">Impresszum</a>
+      <a href="/adatvedelmi-nyilatkozat/">Adatvédelem</a>
+      <a href="/altalanos-szerzodesi-feltetelek-aszf/">ÁSZF</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LEBEGŐ GOMBOK -->
+<a href="<?= $wa_link ?>" class="fwa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<a href="<?= $phone_link ?>" class="fph" aria-label="Hívás">📞 <?= $phone ?></a>
+
+<script>
+function tF(b){var i=b.parentElement,o=i.classList.contains('open');document.querySelectorAll('.fi.open').forEach(function(e){e.classList.remove('open');e.querySelector('.fq').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');b.setAttribute('aria-expanded','true')}}
+function sCb(e){e.preventDefault();var f=document.getElementById('cbf');if(f.querySelector('[name="w"]').value)return;fetch('/kapcsolat/form-handler.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.querySelector('[name="name"]').value,phone:f.querySelector('[name="phone"]').value,message:f.querySelector('[name="message"]').value,kerulet:'<?= $kid ?>'})}).finally(function(){f.style.display='none';document.getElementById('fss').style.display='block'});}
+(function(){var h=document.querySelector('.sh');window.addEventListener('scroll',function(){h.style.boxShadow=scrollY>30?'0 3px 20px rgba(0,0,0,.55)':'0 2px 16px rgba(0,0,0,.4)';},{passive:true});})();
+</script>
+</body>
+</html>
