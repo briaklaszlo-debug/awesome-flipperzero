@@ -43,6 +43,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
   <a href="<?= $wa_link ?>" class="float-btn wa" target="_blank">💬</a>
 </div>
 <header class="site-header">
+  <input type="checkbox" id="nav-check">
   <div class="header-inner">
     <div class="logo"><a href="<?= $base ?>/"><span>🔥</span> Bojler Szerelő Budapest</a></div>
     <nav>
@@ -53,6 +54,7 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
       <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/">Pro1 Eco</a>
     </nav>
     <div class="header-phone"><a href="<?= $phone_link ?>"><?= $phone ?></a></div>
+    <label for="nav-check" class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></label>
   </div>
 </header>
 <section class="hero">
