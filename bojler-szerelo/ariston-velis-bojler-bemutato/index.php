@@ -52,6 +52,9 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
       <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/">Lydos</a>
       <a href="<?= $base ?>/ariston-velis-bojler-bemutato/" class="active">Velis</a>
       <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/">Pro1 Eco</a>
+      <a href="<?= $base ?>/blog/">Blog</a>
+      <a href="<?= $base ?>/ajanlatkeres/">Árajánlat</a>
+      <a href="<?= $base ?>/kapcsolat/">Kapcsolat</a>
     </nav>
     <div class="header-phone"><a href="<?= $phone_link ?>"><?= $phone ?></a></div>
     <label for="nav-check" class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></label>
@@ -242,8 +245,8 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
       <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/">Ariston Pro1 Eco</a>
     </div>
     <div class="footer-col"><h4>Szolgáltatások</h4>
-      <a href="<?= $base ?>/bojler-javitas-budapest/">Javítás</a>
-      <a href="<?= $base ?>/bojler-csere-budapest/">Csere</a>
+      <a href="<?= $base ?>/bojler-javitas-budapest/">Bojler javítás</a>
+      <a href="<?= $base ?>/bojler-csere-budapest/">Bojler csere</a>
       <a href="<?= $base ?>/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a>
     </div>
     <div class="footer-col"><h4>Kerületek</h4>

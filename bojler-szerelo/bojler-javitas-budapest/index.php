@@ -121,11 +121,14 @@ $base       = 'https://www.bojler-szerelo-budapest.hu';
     <div class="logo"><a href="<?= $base ?>/"><span>🔥</span> Bojler Szerelő Budapest</a></div>
     <nav>
       <a href="<?= $base ?>/">Főoldal</a>
-      <a href="<?= $base ?>/bojler-javitas-budapest/" class="active">Javítás</a>
-      <a href="<?= $base ?>/bojler-csere-budapest/">Csere</a>
+      <a href="<?= $base ?>/bojler-javitas-budapest/" class="active">Bojler javítás</a>
+      <a href="<?= $base ?>/bojler-csere-budapest/">Bojler csere</a>
       <a href="<?= $base ?>/bojler-vizkotelenites-budapest/">Vízkőtelenítés</a>
       <a href="<?= $base ?>/ariston-bojler-javitas-budapest/">Ariston</a>
       <a href="<?= $base ?>/hajdu-bojler-csere-budapest/">Hajdú</a>
+      <a href="<?= $base ?>/blog/">Blog</a>
+      <a href="<?= $base ?>/ajanlatkeres/">Árajánlat</a>
+      <a href="<?= $base ?>/kapcsolat/">Kapcsolat</a>
     </nav>
     <div class="header-phone"><a href="<?= $phone_link ?>"><?= $phone ?></a></div>
     <label for="nav-check" class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></label>

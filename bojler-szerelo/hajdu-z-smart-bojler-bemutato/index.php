@@ -32,6 +32,9 @@ $base='https://www.bojler-szerelo-budapest.hu';
       <a href="<?= $base ?>/hajdu-aquastic-bojler-bemutato/">Aquastic</a>
       <a href="<?= $base ?>/hajdu-z-smart-bojler-bemutato/" class="active">Z Smart</a>
       <a href="<?= $base ?>/hajdu-ideallo-bojler-bemutato/">Ideállo</a>
+      <a href="<?= $base ?>/blog/">Blog</a>
+      <a href="<?= $base ?>/ajanlatkeres/">Árajánlat</a>
+      <a href="<?= $base ?>/kapcsolat/">Kapcsolat</a>
     </nav>
     <div class="header-phone"><a href="<?= $phone_link ?>"><?= $phone ?></a></div>
     <label for="nav-check" class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></label>

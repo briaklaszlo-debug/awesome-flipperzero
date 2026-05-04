@@ -32,6 +32,9 @@ $base='https://www.bojler-szerelo-budapest.hu';
       <a href="<?= $base ?>/ariston-lydos-bojler-bemutato/">Lydos</a>
       <a href="<?= $base ?>/ariston-velis-bojler-bemutato/">Velis</a>
       <a href="<?= $base ?>/ariston-pro1-eco-bojler-bemutato/" class="active">Pro1 Eco</a>
+      <a href="<?= $base ?>/blog/">Blog</a>
+      <a href="<?= $base ?>/ajanlatkeres/">Árajánlat</a>
+      <a href="<?= $base ?>/kapcsolat/">Kapcsolat</a>
     </nav>
     <div class="header-phone"><a href="<?= $phone_link ?>"><?= $phone ?></a></div>
     <label for="nav-check" class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></label>
